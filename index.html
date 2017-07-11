@@ -1,5 +1,76 @@
-hello Yext
 
-<p><input id="x">+</p>
+<style>
+input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px; 
+    font-size: 22px;
+}
+</style>
 
-<script src="yext.js"></script>
+<script src="InputManager.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<script>
+
+function mainTextFieldChanged() {
+        var textField = document.getElementById("additional-fields")
+        let additional = document.getElementById("additional-fields")
+
+        console.log("keyed up on main search field")
+        
+        if (textField.value == 0) {
+//          additional.style="visibility:visible"
+
+        console.log("should show")
+
+        } else {
+//          additional.style="visibility:hidden"
+        console.log("should  not show")
+
+
+
+
+        }
+ }
+ </script>
+
+
+<body style="background-color:#ca7272">
+<center><div style="padding-right:25%;padding-left:25%">
+
+<br>
+    <div >
+        <p><input id="main" onKeyUp="mainTextFieldChanged()" placeholder="Specialty, Condition, Treatment..."></p>
+    </div>
+
+    <div id="additional-fields"> 
+        <div class="search-insurance">
+            <select name="Insure" id="Insure" class="search-insurance" style="width:60%">
+                <option SELECTED value="">Filter By Insurance</option>
+            </select>
+            <select name="Gender" id="Gender" class="search-gender" style="width:30%">
+                <option SELECTED value="Gender">Gender</option>
+                <option UNSELECTED value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <br>
+            <br>
+            
+        </div>
+        
+
+        <input type="">
+
+        <input id="">
+
+
+    </div>
+</div>
+</center>
+</body>
+
+<script async src="populate-dropdowns.js"></script>
+
+
+
