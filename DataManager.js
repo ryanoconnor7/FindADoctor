@@ -30,6 +30,7 @@ yext.getJSON=function(url){ // getJSON with promises
     })
 }
 
+// Handle the response
 yext.getJSON("https://api.yext.com/v2/accounts/[accountId]/locations?api_key=API_KEY&v=20170705") 
 .then (function(data){
     console.log("SUCCESS")
@@ -40,4 +41,3 @@ console.log(data)
 console.log(data)
 })
 
-// Hello, commiting now.
