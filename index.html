@@ -12,7 +12,7 @@ input {
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
 <script>
-
+/*
 function mainTextFieldChanged() {
         var textField = document.getElementById("main")
         var additional = document.getElementById("additional-fields")
@@ -20,19 +20,20 @@ function mainTextFieldChanged() {
         console.log("keyed up on main search field")
         
         if (textField.value == 0) {
-         additional.style="visibility:hidden"
+            additional.style="visibility:hidden"
+            console.log("should show")
 
-        console.log("should show")
+            // Update UI to show Specialties - need to get from Yext
+
+            
 
         } else {
-         additional.style="visibility:visible"
-        console.log("should  not show")
-
-
-
+            additional.style="visibility:visible"
+            console.log("should not show")
 
         }
  }
+     */
  </script>
 
 
@@ -43,6 +44,7 @@ function mainTextFieldChanged() {
     <div >
         <p><input id="main" onKeyUp="mainTextFieldChanged()" placeholder="Specialty, Condition, Treatment..."></p>
     </div>
+    <script src="InputManager.js"></script>
 
     <div id="additional-fields" style="visibility:hidden"> 
         <div class="search-insurance">
