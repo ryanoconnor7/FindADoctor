@@ -6,6 +6,19 @@ input {
     border-radius: 10px; 
     font-size: 22px;
 }
+
+#search-view {
+    background: rgba(0, 0, 0, .25); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(0, 0, 0, .40),rgba(0, 0, 0, .4),rgba(0, 0, 0, .4),rgba(0, 0, 0, .0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0, 0, 0, .40),rgba(0, 0, 0, .4),rgba(0, 0, 0, .4),rgba(0, 0, 0, .0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0, 0, 0, .40),rgba(0, 0, 0, .4),rgba(0, 0, 0, .4),rgba(0, 0, 0, .0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0, 0, 0, .40),rgba(0, 0, 0, .4),rgba(0, 0, 0, .4),rgba(0, 0, 0, .0)); /* Standard syntax */
+
+}
+#map {
+        height: 400px;
+        width: 100%;
+       }
 </style>
 
 <script src="InputManager.js"></script>
@@ -13,42 +26,87 @@ input {
 <script src="updateDB.js"></script>
 
 
-<body style="background-color:#ca7272">
-<center><div style="padding-right:25%;padding-left:25%">
-
-<br>
-    <div >
-        <p><input id="main" type="text" onKeyUp="mainTextFieldChanged()" placeholder="Specialty, Condition, Treatment..."></p>
-    </div>
-    <script src="InputManager.js"></script>
-
-    <div id="additional-fields" style="visibility:hidden"> 
-        <div class="search-insurance">
-            <select name="Insure" id="Insure" class="search-insurance" style="width:60%">
-                <option SELECTED value="">Filter By Insurance</option>
-            </select>
-            <select name="Gender" id="Gender" class="search-gender" style="width:30%">
-                <option SELECTED value="Gender">Gender</option>
-                <option UNSELECTED value="Male">Male</option>
-                <option value="Female">Female</option>
-            </select>
-            <select name="Age" id="Age" class="search-age" style="width:50%">
-                <option SELECTED value="Pediatric/Adult">Pediatric/Adult</option>
-                <option UNSELECTED value="Pediatric">Pediatric</option>
-                <option value="Adult">Adult</option>
-            </select>
-            <br>
-            <br>
-            
-        </div>
+        console.log("keyed up on main search field")
         
+        if (textField.value == 0) {
+            additional.style="visibility:hidden"
+            console.log("should show")
 
-        <input id="zipCode" placeholder="Zip Code">
+            // Update UI to show Specialties - need to get from Yext
+
+            
+
+        } else {
+            additional.style="visibility:visible"
+            console.log("should not show")
+
+        }
+ }
+     */
+</script>
+
+<body>
+ <div id="map" style="z-index: -1; position:absolute;width:100%;height:100%">
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtZvb0AIUJCiKc008_nmuu_jikJigt2B4&callback=initMap">
+    </script>
+
+ </div>
+<center>
+    
+    <div id="search-view" style="padding-right:25%;padding-left:25%;z-index:123;position:absolute;align-content:center;;
+    opacity:25";>
+   
+    <br>
+            <script src="InputManager.js"></script>
+
+        <div style="width:100%">
+            <p><input id="main-search" onKeyUp="mainTextFieldChanged()" placeholder="Specialty, Condition, Treatment..." style="width:100%"></p>
+        </div>
+
+        <div id="additional-fields" style="visibility:hidden"> 
+            <div class="search-insurance">
+                <select name="Insure" id="insurence-search" class="search-insurance" style="width:60%">
+                    <option SELECTED value="">Filter By Insurance</option>
+                </select>
+                <select name="Gender" id="gender-search" class="search-gender" style="width:30%">
+                    <option SELECTED value="Gender">Gender</option>
+                    <option UNSELECTED value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <select name="Age" id="age-search" class="search-age" style="width:45%">
+                    <option SELECTED value="Pediatric/Adult">Pediatric/Adult</option>
+                    <option UNSELECTED value="Pediatric">Pediatric</option>
+                    <option value="Adult">Adult</option>
+                </select>
+                <select name="Language" id="language-search" class="search-language" style="width:45">
+                    <option SELECTED value="">Filter By Language</option>
+                </select>       
+                <br>
+                <br>
+                
+            </div>
+            
+
+            <input id="zip-code-search" placeholder="Zip Code">
+        
+        </div>
     </div>
-</div>
 </center>
 </body>
-
 <script async src="populate-dropdowns.js"></script>
 
 
