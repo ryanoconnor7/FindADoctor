@@ -14,7 +14,7 @@ function mainTextFieldChanged() {
                 additional.style="visibility:visible"
                 console.log("should show")
 
-                var specialtyURL = 'https://api.yext.com/v2/accounts/{accountId}/locationsearch?api_key=API_KEY&v=20170705?filters=[{"name":{"contains":["' + textField.textContent + '"]}}]' 
+                var specialtyURL = 'https://api.yext.com/v2/accounts/{accountId}/locationsearch?api_key=API_KEY&v=20170705?filters=[{"categoryID":{"contains":["' + textField.textContent + '"]}}]' 
 
                                 $.getScript("DataManager.js").then(function() {
                                         console.log("Making call...")  
