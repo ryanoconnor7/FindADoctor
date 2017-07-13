@@ -14,30 +14,10 @@ function mainTextFieldChanged() {
                 additional.style="visibility:visible"
                 console.log("should show")
 
-                var specialtyURL = 'https://api.yext.com/v2/accounts/{accountId}/locationsearch?api_key=API_KEY&v=20170705?filters=[{"name":{"contains":["' + textField.textContent + '"]}}]' 
 
-                                $.getScript("DataManager.js").then(function() {
-                                        console.log("Making call...")  
-                                        makeAPICall()
-                                        .then(function(data) {
-                                        console.log("DATA:", JSON.stringify(data))
+        }
 
-                                        try {
-                                        var json = JSON.parse(JSON.stringify(data))
-                                        console.log("JSON:", json)
-                                        handleSpecialtiesResponseSuccess(json)
-                                        } 
-                                        catch (e) {
-                                        console.log("error:", e)
-                                        }
-                                        })
-                                        .catch(function(error) {
-                                        console.log("error: ", error) 
-                                        
-                                        })
-                                })
-                        }
-                }
+}
 
  function handleSpecialtiesResponseSuccess(json) {
 

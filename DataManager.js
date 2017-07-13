@@ -31,10 +31,10 @@ yext.getJSON=function(url){ // getJSON with promises
 
 // Handle the response
 
-function makeAPICall() {
+function makeAPICall(url) {
 
     return new Promise(function(resolve,reject) {
-        yext.getJSON("https://api.yext.com/v2/accounts/[accountId]/locations?api_key=API_KEY&v=20170705") 
+        yext.getJSON(url) 
         .then (function(data){
             console.log("SUCCESS")
             resolve(data)
