@@ -1,0 +1,922 @@
+{
+	"meta": {
+		"uuid": "e957b187-382a-4119-bfcd-a8cb1aaa57d2",
+		"errors": []
+	},
+	"response": {
+		"nextPageToken": "OPUKe5X_MlS_BGg3ri0ETBhh18mUQb5s33UFOp4SITM=",
+		"count": 922,
+		"locations": [{
+			"id": "P1386601359_A",
+			"timestamp": 1497887997580,
+			"accountId": "1277495",
+			"locationName": "Sultana Y Rahman",
+			"address": "31 Oak Street",
+			"address2": "Suite 3",
+			"city": "Patchogue",
+			"state": "NY",
+			"zip": "11772",
+			"countryCode": "US",
+			"language": "en",
+			"phone": "6316381750",
+			"isPhoneTracked": false,
+			"localPhone": "6316381750",
+			"faxPhone": "6316381761",
+			"categoryIds": ["1135560"],
+			"featuredMessage": "Call to schedule an appointment",
+			"featuredMessageUrl": "https://www.stonybrookmedicine.edu/patientcare/family_population_preventive_medicine",
+			"websiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=2123&name=Sultana%20Rahman%20MD",
+			"displayWebsiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=2123&name=Sultana%20Rahman%20MD",
+			"logo": {
+				"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/1132x1132.png",
+				"width": 1132,
+				"height": 1132,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/150x150.png",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/93x93.png",
+					"width": 93,
+					"height": 93
+				}]
+			},
+			"hours": "2:8:00:17:00,3:8:00:17:00,4:8:00:20:00,5:8:00:20:00,6:8:00:17:00",
+			"displayLat": 40.7672157287598,
+			"displayLng": -73.013916015625,
+			"yextDisplayLat": 40.767153669328266,
+			"yextDisplayLng": -73.01386266946793,
+			"yextRoutableLat": 40.76701146954096,
+			"yextRoutableLng": -73.01379561424255,
+			"yextWalkableLat": 40.76708256947264,
+			"yextWalkableLng": -73.0138036608696,
+			"languages": ["Bengali", "English", "Hindu", "Urdu"],
+			"folderId": "112903",
+			"customFields": {
+				"15891": "Healthcare Professionals"
+			},
+			"gender": "FEMALE",
+			"headshot": {
+				"url": "http://a.mktgcdn.com/p/EDABBGU73lcJx2nvH4DByJ-_524gGwRULG90WMn_6ok/1.0000/180x180.jpg",
+				"width": 180,
+				"height": 180,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/EDABBGU73lcJx2nvH4DByJ-_524gGwRULG90WMn_6ok/1.0000/150x150.jpg",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/EDABBGU73lcJx2nvH4DByJ-_524gGwRULG90WMn_6ok/1.0000/94x94.jpg",
+					"width": 94,
+					"height": 94
+				}]
+			},
+			"npi": "1386601359",
+			"firstName": "Sultana",
+			"middleName": "Y",
+			"lastName": "Rahman",
+			"officeName": "Stony Brook Family Medical Group",
+			"educationList": [{
+				"type": "MEDICAL_SCHOOL",
+				"institutionName": "Chittagong Medical College",
+				"yearCompleted": "1984"
+			}, {
+				"type": "INTERNSHIP",
+				"institutionName": "Chittagong Medical College",
+				"yearCompleted": "1985"
+			}, {
+				"type": "RESIDENCY",
+				"institutionName": "SUNY Downstate Medical Center",
+				"yearCompleted": "2005"
+			}],
+			"locationType": "HEALTHCARE_PROFESSIONAL",
+			"conditionsTreated": ["Family Medicine"],
+			"certifications": ["Am Bd Family Medicine"],
+			"insuranceAccepted": ["AETNA", "Affinity", "AgeWell", "BEECH STREET", "Centerlight (CCM)", "CIGNA HMO", "CIGNA PPO", "EMP HEALTH CHOICE HMO", "EMP HEALTH CHOICE PPO", "EMP HEALTH CHOICE SR", "Fidelis", "GHI / MEDICARE PLUS", "GHI CBP", "GHI HMO", "Great West", "Health Net Federal Services", "Health Smart WTC", "HEALTHFIRST", "HIP", "ISLAND GROUP", "MAGNACARE", "MET EMPIRE", "MULTIPLAN", "OXFORD", "Partners Health Paln", "UNITED HEALTHCARE", "US Family Health Plan", "Visiting Nurse Service"],
+			"degrees": ["MD"],
+			"isoRegionCode": "NY",
+			"isClusterPrimary": true
+		}, {
+			"id": "P1659690485_A",
+			"timestamp": 1497887997639,
+			"accountId": "1277495",
+			"locationName": "Alexis Santiago",
+			"address": "260 Middle Country Road",
+			"address2": "Suite 107",
+			"city": "Smithtown",
+			"state": "NY",
+			"zip": "11787",
+			"countryCode": "US",
+			"language": "en",
+			"phone": "6319797222",
+			"isPhoneTracked": false,
+			"localPhone": "6319797222",
+			"faxPhone": "6312657518",
+			"categoryIds": ["1135521"],
+			"featuredMessage": "Call to schedule an appointment",
+			"featuredMessageUrl": "http://smithtownpediatrics.com/",
+			"websiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=2055&name=Alexis%20Santiago%20MD",
+			"displayWebsiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=2055&name=Alexis%20Santiago%20MD",
+			"logo": {
+				"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/1132x1132.png",
+				"width": 1132,
+				"height": 1132,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/150x150.png",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/93x93.png",
+					"width": 93,
+					"height": 93
+				}]
+			},
+			"hours": "2:8:00:20:00,3:8:00:20:00,4:9:00:17:00,5:8:00:20:00,6:8:00:17:00,7:8:00:12:00",
+			"displayLat": 40.854957,
+			"displayLng": -73.18032,
+			"yextDisplayLat": 40.85509249748767,
+			"yextDisplayLng": -73.1801776496468,
+			"yextRoutableLat": 40.85568488481945,
+			"yextRoutableLng": -73.18079723992923,
+			"languages": ["English"],
+			"folderId": "112903",
+			"customFields": {
+				"15891": "Healthcare Professionals"
+			},
+			"gender": "FEMALE",
+			"headshot": {
+				"url": "http://a.mktgcdn.com/p/lofQX9DvSzZ7lGAwQ-0kXfmmC5k7PCjAkXXkAj6xjWQ/1.0000/180x180.png",
+				"width": 180,
+				"height": 180,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/lofQX9DvSzZ7lGAwQ-0kXfmmC5k7PCjAkXXkAj6xjWQ/1.0000/150x150.png",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/lofQX9DvSzZ7lGAwQ-0kXfmmC5k7PCjAkXXkAj6xjWQ/1.0000/94x94.png",
+					"width": 94,
+					"height": 94
+				}]
+			},
+			"npi": "1659690485",
+			"firstName": "Alexis",
+			"lastName": "Santiago",
+			"officeName": "Smithtown Pediatrics",
+			"educationList": [{
+				"type": "MEDICAL_SCHOOL",
+				"institutionName": "New York Medical College",
+				"yearCompleted": "2010"
+			}, {
+				"type": "FELLOWSHIP",
+				"institutionName": "Northwell Cohen Children's Medical Center",
+				"yearCompleted": "2016"
+			}, {
+				"type": "RESIDENCY",
+				"institutionName": "Stony Brook University Hospital",
+				"yearCompleted": "2013"
+			}],
+			"locationType": "HEALTHCARE_PROFESSIONAL",
+			"certifications": ["Am Bd Pediatrics"],
+			"insuranceAccepted": ["AETNA", "Affinity", "AgeWell", "BEECH STREET", "Centerlight (CCM)", "CIGNA HMO", "CIGNA PPO", "EMP HEALTH CHOICE HMO", "EMP HEALTH CHOICE PPO", "EMP HEALTH CHOICE SR", "Fidelis", "GHI / MEDICARE PLUS", "GHI CBP", "GHI HMO", "Great West", "Health Net Federal Services", "Health Smart WTC", "HEALTHFIRST", "HIP", "ISLAND GROUP", "MAGNACARE", "MET EMPIRE", "MULTIPLAN", "OXFORD", "Partners Health Paln", "UNITED HEALTHCARE", "US Family Health Plan", "Visiting Nurse Service"],
+			"degrees": ["MD"],
+			"isoRegionCode": "NY",
+			"isClusterPrimary": true
+		}, {
+			"id": "P1013114545_A",
+			"timestamp": 1497887997681,
+			"accountId": "1277495",
+			"locationName": "Brian Hunt",
+			"address": "140 North Belle Mead Road",
+			"address2": "Suite E",
+			"city": "East Setauket",
+			"state": "NY",
+			"zip": "11733",
+			"countryCode": "US",
+			"language": "en",
+			"phone": "6314444686",
+			"isPhoneTracked": false,
+			"localPhone": "6314444686",
+			"categoryIds": ["1350"],
+			"featuredMessage": "Call to schedule an appointment",
+			"featuredMessageUrl": "https://www.stonybrookmedicine.edu/patientcare/obgyn/",
+			"websiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=1652&name=Brian%20Hunt%20MD",
+			"displayWebsiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=1652&name=Brian%20Hunt%20MD",
+			"logo": {
+				"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/1132x1132.png",
+				"width": 1132,
+				"height": 1132,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/150x150.png",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/93x93.png",
+					"width": 93,
+					"height": 93
+				}]
+			},
+			"displayLat": 40.9052810668945,
+			"displayLng": -73.0903091430664,
+			"yextDisplayLat": 40.90554012960801,
+			"yextDisplayLng": -73.09034317731857,
+			"yextRoutableLat": 40.90605300597343,
+			"yextRoutableLng": -73.09005349874496,
+			"languages": ["English"],
+			"folderId": "112903",
+			"customFields": {
+				"15891": "Healthcare Professionals"
+			},
+			"gender": "MALE",
+			"headshot": {
+				"url": "http://a.mktgcdn.com/p/4wn_0os-t_3DJdMyXzEYHcqSdfrxE-U9Gqkxp2teJCY/1.0000/180x180.jpg",
+				"width": 180,
+				"height": 180,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/4wn_0os-t_3DJdMyXzEYHcqSdfrxE-U9Gqkxp2teJCY/1.0000/150x150.jpg",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/4wn_0os-t_3DJdMyXzEYHcqSdfrxE-U9Gqkxp2teJCY/1.0000/94x94.jpg",
+					"width": 94,
+					"height": 94
+				}]
+			},
+			"npi": "1013114545",
+			"firstName": "Brian",
+			"lastName": "Hunt",
+			"officeName": "University Associates In Ob/gyn",
+			"educationList": [{
+				"type": "MEDICAL_SCHOOL",
+				"institutionName": "St. George's University School of Medicine",
+				"yearCompleted": "2004"
+			}, {
+				"type": "RESIDENCY",
+				"institutionName": "Monmouth Medical Center",
+				"yearCompleted": "2009"
+			}, {
+				"type": "RESIDENCY",
+				"institutionName": "Stamford Hospital",
+				"yearCompleted": "2013"
+			}],
+			"locationType": "HEALTHCARE_PROFESSIONAL",
+			"insuranceAccepted": ["AETNA", "Affinity", "AgeWell", "BEECH STREET", "Centerlight (CCM)", "CIGNA HMO", "CIGNA PPO", "EMP HEALTH CHOICE HMO", "EMP HEALTH CHOICE PPO", "EMP HEALTH CHOICE SR", "Fidelis", "GHI / MEDICARE PLUS", "GHI CBP", "GHI HMO", "Great West", "Health Net Federal Services", "Health Smart WTC", "HEALTHFIRST", "HIP", "ISLAND GROUP", "MAGNACARE", "MET EMPIRE", "MULTIPLAN", "OXFORD", "Partners Health Paln", "UNITED HEALTHCARE", "US Family Health Plan", "Visiting Nurse Service", "VYTRA", "Workers Compensation"],
+			"degrees": ["MD"],
+			"isoRegionCode": "NY",
+			"isClusterPrimary": true
+		}, {
+			"id": "P1013943919_A",
+			"timestamp": 1497887997734,
+			"accountId": "1277495",
+			"locationName": "Todd Griffin",
+			"address": "140 North Belle Mead Road",
+			"address2": "Suite E",
+			"city": "East Setauket",
+			"state": "NY",
+			"zip": "11733",
+			"countryCode": "US",
+			"language": "en",
+			"phone": "6314444686",
+			"isPhoneTracked": false,
+			"localPhone": "6314444686",
+			"faxPhone": "6314444218",
+			"categoryIds": ["1350"],
+			"featuredMessage": "Call to schedule an appointment",
+			"featuredMessageUrl": "https://www.stonybrookmedicine.edu/patientcare/obgyn/",
+			"websiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=257&name=Todd%20Griffin%20MD",
+			"displayWebsiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=257&name=Todd%20Griffin%20MD",
+			"description": "*Practice limited to gynecology",
+			"logo": {
+				"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/1132x1132.png",
+				"width": 1132,
+				"height": 1132,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/150x150.png",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/93x93.png",
+					"width": 93,
+					"height": 93
+				}]
+			},
+			"displayLat": 40.905281,
+			"displayLng": -73.090309,
+			"yextDisplayLat": 40.90551394562419,
+			"yextDisplayLng": -73.09035341104504,
+			"yextRoutableLat": 40.90607327768481,
+			"yextRoutableLng": -73.09001058340073,
+			"languages": ["English", "Spanish"],
+			"folderId": "136179",
+			"customFields": {
+				"15891": "Healthcare Professionals/OBGYN"
+			},
+			"gender": "MALE",
+			"headshot": {
+				"url": "http://a.mktgcdn.com/p/yK7KAXq4u9nBo6pSTM4XS70xdP4AlVn2RcgIXX7aRg4/1.0000/180x180.jpg",
+				"width": 180,
+				"height": 180,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/yK7KAXq4u9nBo6pSTM4XS70xdP4AlVn2RcgIXX7aRg4/1.0000/150x150.jpg",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/yK7KAXq4u9nBo6pSTM4XS70xdP4AlVn2RcgIXX7aRg4/1.0000/94x94.jpg",
+					"width": 94,
+					"height": 94
+				}]
+			},
+			"npi": "1013943919",
+			"firstName": "Todd",
+			"lastName": "Griffin",
+			"officeName": "University Associates In Ob/gyn",
+			"educationList": [{
+				"type": "MEDICAL_SCHOOL",
+				"institutionName": "SUNY @ Stony Brook School of Medicine",
+				"yearCompleted": "1993"
+			}, {
+				"type": "RESIDENCY",
+				"institutionName": "SUNY @ Stony Brook",
+				"yearCompleted": "1997"
+			}],
+			"locationType": "HEALTHCARE_PROFESSIONAL",
+			"conditionsTreated": ["Abnormal Pap Smears", "Advanced Hysteroscopy", "Advanced Laparoscopy", "Alternatives to Hysterectomy", "Benign Tumors of the Uterus", "Birth Control", "Cervix Dysplasia", "Colposcopy", "Contraception", "Endometriosis", "Fibroids Benign Tumors", "Uterus", "Genital Herpes in Women", "Genital Warts", "Gynecologic Ultrasound", "Gynecological Care", "HPV(Genital Warts)", "Hysterectomy", "Hysterectomy Alternatives", "Hysteroscopy", "Laparoscopic Surgery", "Laparoscopy", "Menopause", "Menorrhagia (Vaginal Bleeding)", "Obstetrics", "Pap Test (Pap Smear)", "Pelvic Pain", "Pelvic Surgery", "PMS (Prementrual Syndrome)", "Pregnancy", "Ectopic", "Prenatal Care", "STD (Sexually Transmitted Dis)", "Ultrasound", "Urinary Incontinence", "Uterine Fibroids", "Vaginal Bleeding", "Vaginal Hystercetomy Laparscop", "Warts", "Women's Health", "Women's Medicine"],
+			"certifications": ["Am Bd Ob&Gyn"],
+			"insuranceAccepted": ["1199", "AETNA", "Affinity", "AgeWell", "AMERICAN MED. & LIFE", "APA PARTNERS", "BEECH STREET", "CIGNA HMO", "CIGNA PPO", "EMP HEALTH CHOICE HMO", "EMP HEALTH CHOICE PPO", "EMP HEALTH CHOICE SR", "Fidelis", "FIRST CHOICE/CORVEL", "FIRST HEALTH", "GHI CBP", "GHI HMO", "GHI PPO", "Great West", "HEALTH NET / PHS", "Health Net Federal Services", "HEALTHFIRST", "HIP", "HORIZON", "ISLAND GROUP ADMIN", "MAGNACARE", "MDNY", "MET EMPIRE", "MULTIPLAN", "OXFORD", "Partners Health Paln", "SIERRA", "SUFFOLK HEALTH PLAN", "UNITED HEALTH CARE / CHP / MEDICAID", "UNITED HEALTHCARE", "US Family Health Plan", "US HEALTHCARE", "USI / SELECTPRO", "Visiting Nurse Service", "VYTRA", "Workers Compensation"],
+			"degrees": ["MD"],
+			"isoRegionCode": "NY",
+			"isClusterPrimary": true
+		}, {
+			"id": "P1033142526_A",
+			"timestamp": 1497887997786,
+			"accountId": "1277495",
+			"locationName": "Travis J Bench",
+			"address": "676 Rte 39A",
+			"city": "Southampton",
+			"state": "NY",
+			"zip": "11968",
+			"countryCode": "US",
+			"language": "en",
+			"phone": "6317028327",
+			"isPhoneTracked": false,
+			"localPhone": "6317028327",
+			"faxPhone": "6317028314",
+			"categoryIds": ["1355"],
+			"featuredMessage": "Call to schedule an appointment",
+			"featuredMessageUrl": "https://heart.stonybrookmedicine.edu",
+			"websiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=1026&name=Travis%20Bench%20MD",
+			"displayWebsiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=1026&name=Travis%20Bench%20MD",
+			"logo": {
+				"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/1132x1132.png",
+				"width": 1132,
+				"height": 1132,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/150x150.png",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/93x93.png",
+					"width": 93,
+					"height": 93
+				}]
+			},
+			"displayLat": 40.8986167907715,
+			"displayLng": -72.3754959106445,
+			"yextDisplayLat": 40.89870207378832,
+			"yextDisplayLng": -72.37541109323502,
+			"yextRoutableLat": 40.89898996350326,
+			"yextRoutableLng": -72.37488001585007,
+			"yextWalkableLat": 40.89869599159773,
+			"yextWalkableLng": -72.37521260976791,
+			"languages": ["English"],
+			"folderId": "136216",
+			"customFields": {
+				"15891": "Healthcare Professionals/Cardiology"
+			},
+			"gender": "MALE",
+			"headshot": {
+				"url": "http://a.mktgcdn.com/p/h35IJGktQRadAvoZpvd6fatxEDcNGz1dSA6QD8Mdgqo/1.0000/180x180.jpg",
+				"width": 180,
+				"height": 180,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/h35IJGktQRadAvoZpvd6fatxEDcNGz1dSA6QD8Mdgqo/1.0000/150x150.jpg",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/h35IJGktQRadAvoZpvd6fatxEDcNGz1dSA6QD8Mdgqo/1.0000/94x94.jpg",
+					"width": 94,
+					"height": 94
+				}]
+			},
+			"npi": "1033142526",
+			"firstName": "Travis",
+			"middleName": "J",
+			"lastName": "Bench",
+			"officeName": "Stony Brook Cardiology",
+			"educationList": [{
+				"type": "FELLOWSHIP",
+				"institutionName": "Stony Brook University Hospital",
+				"yearCompleted": "2010"
+			}, {
+				"type": "MEDICAL_SCHOOL",
+				"institutionName": "Sch. of Med. SUNY at Stony Brook",
+				"yearCompleted": "2006"
+			}, {
+				"type": "FELLOWSHIP",
+				"institutionName": "Stony Brook University Hospital",
+				"yearCompleted": "2011"
+			}, {
+				"type": "RESIDENCY",
+				"institutionName": "Presbyterian Hospital of New York",
+				"yearCompleted": "2009"
+			}],
+			"locationType": "HEALTHCARE_PROFESSIONAL",
+			"conditionsTreated": ["Angina", "Angioplasty (Coronary)", "Angioplasty", "Non-Coronary", "Artery", "Atherosclerosis Prevention", "Atrial Fibrillation", "Cardiac Catheterization", "Cardiac Diseases", "Cardiology", "Cardiovascular Dysfunction", "Claudication", "Congestive Heart Failure", "Coronary Angiogram", "Coronary Artery Disease Tests", "Coronary Disease", "Guiding Heart Failure Therapy", "Guiding Percutaneous Procedure", "Heart Attack", "Heart Failure(CHF)", "Heart Valve Diseases", "High Blood Pressure", "Hyperlipidemia", "Hypertension(High Blood Press)", "Interventive Procedures", "Peripheral Vascular Disease", "Prevention of Heart Disease", "Renovascular Hypertension", "Risk Factor Management", "Risk Prevention", "Valvular Heart Disease", "Vascular"],
+			"certifications": ["Am Bd IM (CSQ: Cardiovas Dis)", "Am Bd Int Med", "Am Bd Int Med (CAQ:Interventional Cardiology)"],
+			"insuranceAccepted": ["AETNA", "Affinity", "AgeWell", "BEECH STREET", "Centerlight (CCM)", "CIGNA HMO", "CIGNA PPO", "EMP HEALTH CHOICE HMO", "EMP HEALTH CHOICE PPO", "EMP HEALTH CHOICE SR", "Fidelis", "GHI / MEDICARE PLUS", "GHI CBP", "GHI HMO", "Great West", "Health Net Federal Services", "Health Smart WTC", "HEALTHFIRST", "HIP", "ISLAND GROUP", "MAGNACARE", "MET EMPIRE", "MULTIPLAN", "OXFORD", "Partners Health Paln", "UNITED HEALTHCARE", "US Family Health Plan", "Visiting Nurse Service", "Workers Compensation"],
+			"degrees": ["MD"],
+			"isoRegionCode": "NY",
+			"isClusterPrimary": true
+		}, {
+			"id": "P1083626113_A",
+			"timestamp": 1497887997834,
+			"accountId": "1277495",
+			"locationName": "David S Landau",
+			"address": "23 S Howell Avenue",
+			"address2": "Suite G",
+			"city": "Centereach",
+			"state": "NY",
+			"zip": "11720",
+			"countryCode": "US",
+			"language": "en",
+			"phone": "6316381670",
+			"isPhoneTracked": false,
+			"localPhone": "6316381670",
+			"faxPhone": "6314448824",
+			"categoryIds": ["2162"],
+			"featuredMessage": "Call to schedule an appointment",
+			"featuredMessageUrl": "https://vein.stonybrookmedicine.edu",
+			"websiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=770&name=David%20Landau%20MD",
+			"displayWebsiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=770&name=David%20Landau%20MD",
+			"logo": {
+				"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/1132x1132.png",
+				"width": 1132,
+				"height": 1132,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/150x150.png",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/93x93.png",
+					"width": 93,
+					"height": 93
+				}]
+			},
+			"displayLat": 40.8582924306393,
+			"displayLng": -73.0704901367426,
+			"yextDisplayLat": 40.85936699823351,
+			"yextDisplayLng": -73.07041972875595,
+			"yextRoutableLat": 40.85956580092198,
+			"yextRoutableLng": -73.07074427604675,
+			"languages": ["English"],
+			"folderId": "112903",
+			"customFields": {
+				"15891": "Healthcare Professionals"
+			},
+			"gender": "MALE",
+			"headshot": {
+				"url": "http://a.mktgcdn.com/p/P8uqyNYk0V3YaVf_XD72gYzwuIXLROjHVNRAM2GEN98/1.0000/180x180.jpg",
+				"width": 180,
+				"height": 180,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/P8uqyNYk0V3YaVf_XD72gYzwuIXLROjHVNRAM2GEN98/1.0000/150x150.jpg",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/P8uqyNYk0V3YaVf_XD72gYzwuIXLROjHVNRAM2GEN98/1.0000/94x94.jpg",
+					"width": 94,
+					"height": 94
+				}]
+			},
+			"npi": "1083626113",
+			"firstName": "David",
+			"middleName": "S",
+			"lastName": "Landau",
+			"officeName": "Stony Brook Medicine Vascular Ctr",
+			"educationList": [{
+				"type": "MEDICAL_SCHOOL",
+				"institutionName": "SUNY Upstate Medical Center",
+				"yearCompleted": "1990"
+			}, {
+				"type": "FELLOWSHIP",
+				"institutionName": "Cleveland Clinic Hospital",
+				"yearCompleted": "2002"
+			}, {
+				"type": "FELLOWSHIP",
+				"institutionName": "Ohio State University Hospital",
+				"yearCompleted": "1997"
+			}, {
+				"type": "RESIDENCY",
+				"institutionName": "University of Illinois at Chicago",
+				"yearCompleted": "1995"
+			}, {
+				"type": "FELLOWSHIP",
+				"institutionName": "University of Illinois at Chicago",
+				"yearCompleted": "1996"
+			}],
+			"locationType": "HEALTHCARE_PROFESSIONAL",
+			"conditionsTreated": ["AAA Abdominal Aortic Aneurysm", "Abdominal Aneurysm", "Aneurysm of Aorta", "Angioplasty", "Non-Coronary", "Arterial Conditions", "Atherosclerosis", "AV Fistula", "AV Grafts", "AV Malformations", "Bypass Surgery", "Carotid Angioplasty", "Carotid Atherosclerosis", "Carotid Surgery", "Cerebrovascular Diseases", "Circulation", "Claudication", "Dialysis Access", "Endovascular", "Endovascular Surgery", "Limb Salvage", "Lower Extremity Diseases", "Peripheral Vascular Disease", "Renal Artery Stenosis", "Renovascular Hypertension", "Stroke", "Surgery", "Hemodialysis", "Thoracic Outlet Syndrome", "Varicose Veins", "Vascular", "Vascular Surgery", "Venous Conditions", "Venous Disorders", "Venous Insufficiency", "Venous Thrombosis", "Wound Care", "Wound Healing"],
+			"certifications": ["Am Bd Surg (CSQ: General Vascular Surg)"],
+			"insuranceAccepted": ["AETNA", "Affinity", "AgeWell", "APA PARTNERS", "BEECH STREET", "CIGNA HMO", "CIGNA PPO", "EMP HEALTH CHOICE HMO", "EMP HEALTH CHOICE PPO", "EMP HEALTH CHOICE SR", "Fidelis", "FIRST CHOICE/CORVEL", "GHI / MEDICARE PLUS", "GHI CBP", "GHI HMO", "Great West", "HEALTH NET / PHS", "Health Net Federal Services", "HEALTHFIRST", "HIP", "ISLAND GROUP", "MAGNACARE", "MET EMPIRE", "METRA COMP", "MULTIPLAN", "Neighborhood Health Plan (Royal)", "OXFORD", "Partners Health Paln", "UNITED HEALTH CARE / CHP / MEDICAID", "UNITED HEALTHCARE", "US Family Health Plan", "US HEALTHCARE", "Visiting Nurse Service", "VYTRA", "Workers Compensation"],
+			"degrees": ["MD"],
+			"isoRegionCode": "NY",
+			"isClusterPrimary": true
+		}, {
+			"id": "P1083694541_A",
+			"timestamp": 1497887997897,
+			"accountId": "1277495",
+			"locationName": "Vinay M Tak",
+			"address": "101 Nicolls Road",
+			"city": "Stony Brook",
+			"state": "NY",
+			"zip": "11794",
+			"countryCode": "US",
+			"language": "en",
+			"phone": "6314441820",
+			"isPhoneTracked": false,
+			"localPhone": "6314441820",
+			"categoryIds": ["1355"],
+			"featuredMessage": "Call to schedule an appointment",
+			"featuredMessageUrl": "https://heart.stonybrookmedicine.edu/",
+			"websiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=2006&name=Vinay%20Tak%20MD",
+			"displayWebsiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=2006&name=Vinay%20Tak%20MD",
+			"description": "<I>I consider myself fortunate to have received a very strong medical and ethical training by teachers who were champions in their field, something that has carried me through all these years and travels to maintain the very highest standards demanded of a physician.\n\n\n\nMy teachers imparted to me the best clinical practices of the day and the strong ethics to be a patient advocate at all times, yet also to remain compassionate and empathetic to patient suffering. This will forever be my guiding principle.\n\n\n\nI pursued the field of surgery with an inbuilt passion and energy, and chose cardiothoracic surgery as my career. It seemed to fit in with my desire to help and my energy to continue my training. It took me through India, Great Britain, and then finally the United States to decide where I wanted to establish my ultimate career.\n\n\n\nOver the years I have trained in almost every sub-specialty of cardiac and thoracic surgery, including pediatric cardiac surgery and heart failure, but at present I limit my clinical practice to adult cardiac and thoracic surgery. I have taken on complex and high-risk cases to be my calling, and my career at SUNY Downstate Medical Center in Brooklyn was based mostly on this subset of the population. I keep my interest in congenital surgery at this time limited to adult congenital surgery.\n\n\n\nThe global experience I have gained on three continents during my training and credentialing has allowed me to extract the best of all places — and the realization that one mold does not fit all patients. It allows me the luxury of customizing each procedure for the patient.\n\n\n\nI have been fortunate that in this long period of time I have not lost the empathy for my patients and still believe in the sacred doctor-patient relationship that seems to be a dwindling sentiment in the commercialized corporate world of medicine. I have laughed and cried with my patients, and have shared their happiness when they have done well, and shared their griefs when things have not gone so well. The greatest form of thanks is when my patient understands that I have put in my best effort for him or her.\n\n\n\nI have a very satisfying career in my profession, in which I take great pride. I always consider it a privilege to be given this opportunity to serve. I hope I can impart this sense of satisfaction to my students and residents, and give my best to all my patients who are and always should be the primary focus of everything.\n\n\n\nThis is what we are here for, this is what we do, and this is what gives us the rights and the privileges to be a caring and compassionate physician.</I>",
+			"logo": {
+				"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/1132x1132.png",
+				"width": 1132,
+				"height": 1132,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/150x150.png",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/93x93.png",
+					"width": 93,
+					"height": 93
+				}]
+			},
+			"displayLat": 40.9128303527832,
+			"displayLng": -73.1399230957031,
+			"yextDisplayLat": 40.90915745848683,
+			"yextDisplayLng": -73.1157377962951,
+			"yextRoutableLat": 40.90388288333098,
+			"yextRoutableLng": -73.11632204800844,
+			"yextWalkableLat": 40.9084815127764,
+			"yextWalkableLng": -73.11507046222687,
+			"languages": ["English"],
+			"folderId": "112903",
+			"customFields": {
+				"15891": "Healthcare Professionals"
+			},
+			"gender": "MALE",
+			"headshot": {
+				"url": "http://a.mktgcdn.com/p/WFctOsKbflUn9mO8xCnBtwzuFOwgXDg7V2zvjeEm6AM/1.0000/180x180.jpg",
+				"width": 180,
+				"height": 180,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/WFctOsKbflUn9mO8xCnBtwzuFOwgXDg7V2zvjeEm6AM/1.0000/150x150.jpg",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/WFctOsKbflUn9mO8xCnBtwzuFOwgXDg7V2zvjeEm6AM/1.0000/94x94.jpg",
+					"width": 94,
+					"height": 94
+				}]
+			},
+			"npi": "1083694541",
+			"firstName": "Vinay",
+			"middleName": "M",
+			"lastName": "Tak",
+			"officeName": "Stony Brook Heart Institute",
+			"educationList": [{
+				"type": "FELLOWSHIP",
+				"institutionName": "Baystate Medical Center",
+				"yearCompleted": "1998"
+			}, {
+				"type": "FELLOWSHIP",
+				"institutionName": "Providence St. Vincent Med Ctr",
+				"yearCompleted": "1997"
+			}, {
+				"type": "INTERNSHIP",
+				"institutionName": "Royal Victoria Hospital",
+				"yearCompleted": "1993"
+			}, {
+				"type": "INTERNSHIP",
+				"institutionName": "University of Wales College",
+				"yearCompleted": "1992"
+			}, {
+				"type": "MEDICAL_SCHOOL",
+				"institutionName": "Nilratan Sircar Medical College",
+				"yearCompleted": "1986"
+			}, {
+				"type": "RESIDENCY",
+				"institutionName": "New York Hospital Queens Medical Center",
+				"yearCompleted": "2003"
+			}, {
+				"type": "RESIDENCY",
+				"institutionName": "St. Louis University Hospital",
+				"yearCompleted": "2005"
+			}, {
+				"type": "RESIDENCY",
+				"institutionName": "University of Calcutta Medical College",
+				"yearCompleted": "1991"
+			}, {
+				"type": "RESIDENCY",
+				"institutionName": "Papworth Hospital NHS Foundation Trust",
+				"yearCompleted": "1995"
+			}],
+			"locationType": "HEALTHCARE_PROFESSIONAL",
+			"conditionsTreated": ["Achalasia", "Acid Reflux (GERD)", "Aneurysm of Aorta", "CABG heart", "Cardiac Surgery", "Chest Wall Anomalies", "Critical Care", "Dysphagia", "Endovascular Surgery", "Fundoplication", "Gastroesophageal Reflux Diseas", "Heart", "Heart Bypass (CABG)", "Heart Defects", "Laparoscopy", "Lung Cancer", "Pectus Excavatum", "Thoracic", "Thoracic Aortic Aneurysms", "Thoracic Outlet Syndrome", "Tracheostomy", "Trauma", "Valvular Heart Disease"],
+			"certifications": ["Am Bd Surgery", "Am Bd Thoracic Surg (Cardiac & Thoracic)"],
+			"insuranceAccepted": ["AETNA", "Affinity", "AgeWell", "BEECH STREET", "Centerlight (CCM)", "CIGNA HMO", "CIGNA PPO", "EMP HEALTH CHOICE HMO", "EMP HEALTH CHOICE PPO", "EMP HEALTH CHOICE SR", "Fidelis", "GHI / MEDICARE PLUS", "GHI CBP", "GHI HMO", "Great West", "Health Net Federal Services", "Health Smart WTC", "HEALTHFIRST", "HIP", "ISLAND GROUP", "MAGNACARE", "MET EMPIRE", "MULTIPLAN", "OXFORD", "Partners Health Paln", "UNITED HEALTHCARE", "US Family Health Plan", "Visiting Nurse Service", "VYTRA", "Workers Compensation"],
+			"degrees": ["MD"],
+			"isoRegionCode": "NY",
+			"isClusterPrimary": true
+		}, {
+			"id": "P1093905804_A",
+			"timestamp": 1497887997940,
+			"accountId": "1277495",
+			"locationName": "Neha S Pawar",
+			"address": "5036 Jericho Turnpike",
+			"address2": "Suite 207",
+			"city": "Commack",
+			"state": "NY",
+			"zip": "11725",
+			"countryCode": "US",
+			"language": "en",
+			"phone": "6314868372",
+			"isPhoneTracked": false,
+			"localPhone": "6314868372",
+			"faxPhone": "6314868374",
+			"categoryIds": ["1135560"],
+			"featuredMessage": "Call to schedule an appointment",
+			"featuredMessageUrl": "https://www.stonybrookmedicine.edu/lipremiermedicalcare",
+			"websiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=1994&name=Neha%20Pawar%20MD",
+			"displayWebsiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=1994&name=Neha%20Pawar%20MD",
+			"description": "Dr. Pawar earned a B.A. in Anthropology from Tufts University in Massachusetts followed by a Doctor of Medicine degree from Saba University School of Medicine in the Netherlands- Antilles.  She returned to the United States to complete her Internship and Residency training at Columbia University College of Physicians and Surgeons.  Prior to her third year of training Dr. Pawar was selected as Chief Resident and successfully completed her training.\n\n\n\nShe began her career in Hospital Medicine initially at Winthrop University Hospital, then Huntington Hospital, followed by Syosset Hospital under the Northwell System for the past 8 years.  During her time in Hospital Medicine, Dr Pawar published an article in the Heart and Lung Journal of Acute and Critical Care, as well as participated on the Sepsis Task Force Initiation team.  She also underwent complete training for the Ebola first responder team.\n\n\n\nAfter 9 years in Hospital Medicine, Dr. Pawar is expanding her career to include Primary Care.  She initially began as the sole full time Physician provider at Northport Family Practice in Northport, NY and is excited to now begin her own Primary Care office at Long Island Premier Medical Care.\n\n\n\nDr. Pawar is a member of the American Medical Association and American College of Medicine.  Her hospital affiliations include: StonyBrook Hospital and Huntington Hospital.  She will have admitting privileges and will provide care for her patients if admitted to Huntington Hospital.",
+			"logo": {
+				"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/1132x1132.png",
+				"width": 1132,
+				"height": 1132,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/150x150.png",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/93x93.png",
+					"width": 93,
+					"height": 93
+				}]
+			},
+			"displayLat": 40.840194,
+			"displayLng": -73.311668,
+			"yextDisplayLat": 40.840173719300076,
+			"yextDisplayLng": -73.31168754237865,
+			"yextRoutableLat": 40.84063535832571,
+			"yextRoutableLng": -73.31202952401782,
+			"yextWalkableLat": 40.84039794437126,
+			"yextWalkableLng": -73.31167681353236,
+			"languages": ["English", "Hindi", "Spanish"],
+			"folderId": "136311",
+			"customFields": {
+				"15891": "Healthcare Professionals/LI Premier Medical"
+			},
+			"gender": "FEMALE",
+			"headshot": {
+				"url": "http://a.mktgcdn.com/p/BJL5vZPrP3adyJziEThW0zsKhEuGHhh5aKhxnCSJSCA/1.0000/180x180.jpg",
+				"width": 180,
+				"height": 180,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/BJL5vZPrP3adyJziEThW0zsKhEuGHhh5aKhxnCSJSCA/1.0000/150x150.jpg",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/BJL5vZPrP3adyJziEThW0zsKhEuGHhh5aKhxnCSJSCA/1.0000/94x94.jpg",
+					"width": 94,
+					"height": 94
+				}]
+			},
+			"npi": "1093905804",
+			"firstName": "Neha",
+			"middleName": "S",
+			"lastName": "Pawar",
+			"officeName": "Li Premier Medical Care",
+			"educationList": [{
+				"type": "MEDICAL_SCHOOL",
+				"institutionName": "Saba University School of Medicine",
+				"yearCompleted": "2004"
+			}, {
+				"type": "RESIDENCY",
+				"institutionName": "Stamford Hospital",
+				"yearCompleted": "2007"
+			}],
+			"locationType": "HEALTHCARE_PROFESSIONAL",
+			"conditionsTreated": ["Internal Medicine"],
+			"certifications": ["Am Bd Int Med"],
+			"insuranceAccepted": ["AETNA", "Affinity", "AgeWell", "BEECH STREET", "Centerlight (CCM)", "CIGNA HMO", "CIGNA PPO", "EMP HEALTH CHOICE HMO", "EMP HEALTH CHOICE PPO", "EMP HEALTH CHOICE SR", "Fidelis", "GHI / MEDICARE PLUS", "GHI CBP", "GHI HMO", "Great West", "Health Net Federal Services", "Health Smart WTC", "HEALTHFIRST", "HIP", "ISLAND GROUP", "MAGNACARE", "MET EMPIRE", "MULTIPLAN", "OXFORD", "Partners Health Paln", "UNITED HEALTHCARE", "US Family Health Plan", "Visiting Nurse Service", "Workers Compensation"],
+			"degrees": ["MD"],
+			"isoRegionCode": "NY",
+			"isClusterPrimary": true
+		}, {
+			"id": "P1104036326_A",
+			"timestamp": 1497887997992,
+			"accountId": "1277495",
+			"locationName": "Nariman S Boyle",
+			"address": "33 Research Way",
+			"address2": "Suite 13",
+			"city": "East Setauket",
+			"state": "NY",
+			"zip": "11733",
+			"countryCode": "US",
+			"language": "en",
+			"phone": "6314444090",
+			"isPhoneTracked": false,
+			"localPhone": "6314444090",
+			"faxPhone": "6314444089",
+			"categoryIds": ["1266"],
+			"featuredMessage": "Call to schedule an appointment",
+			"featuredMessageUrl": "https://www.stonybrookmedicine.edu/patientcare/ophthalmology",
+			"websiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=740&name=Nariman%20Boyle%20MD",
+			"displayWebsiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=740&name=Nariman%20Boyle%20MD",
+			"logo": {
+				"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/1132x1132.png",
+				"width": 1132,
+				"height": 1132,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/150x150.png",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/93x93.png",
+					"width": 93,
+					"height": 93
+				}]
+			},
+			"displayLat": 40.9023021161556,
+			"displayLng": -73.0867295712233,
+			"yextDisplayLat": 40.90102557943326,
+			"yextDisplayLng": -73.08750894343802,
+			"yextRoutableLat": 40.90157794845928,
+			"yextRoutableLng": -73.08657510417675,
+			"languages": ["Arabic", "English", "French"],
+			"folderId": "112903",
+			"customFields": {
+				"15891": "Healthcare Professionals"
+			},
+			"gender": "FEMALE",
+			"headshot": {
+				"url": "http://a.mktgcdn.com/p/vEscvo4mawqup15jSeL0nR_rjU8IJaim8aafzS1CXHI/1.0000/180x180.jpg",
+				"width": 180,
+				"height": 180,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/vEscvo4mawqup15jSeL0nR_rjU8IJaim8aafzS1CXHI/1.0000/150x150.jpg",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/vEscvo4mawqup15jSeL0nR_rjU8IJaim8aafzS1CXHI/1.0000/94x94.jpg",
+					"width": 94,
+					"height": 94
+				}]
+			},
+			"npi": "1104036326",
+			"firstName": "Nariman",
+			"middleName": "S",
+			"lastName": "Boyle",
+			"officeName": "Stony Brook Ophthalmology",
+			"educationList": [{
+				"type": "MEDICAL_SCHOOL",
+				"institutionName": "American University of Beirut Medical Center",
+				"yearCompleted": "1990"
+			}, {
+				"type": "FELLOWSHIP",
+				"institutionName": "University of California at San Francisco Med. Ctr.",
+				"yearCompleted": "2003"
+			}, {
+				"type": "FELLOWSHIP",
+				"institutionName": "Institute of Opthalmology/Moorfield Eye Hosp",
+				"yearCompleted": "1997"
+			}, {
+				"type": "FELLOWSHIP",
+				"institutionName": "Doheny Eye Institute",
+				"yearCompleted": "2009"
+			}, {
+				"type": "FELLOWSHIP",
+				"institutionName": "Emory University Hospital",
+				"yearCompleted": "2001"
+			}, {
+				"type": "INTERNSHIP",
+				"institutionName": "Good Samaritan Hospital",
+				"yearCompleted": "2004"
+			}, {
+				"type": "RESIDENCY",
+				"institutionName": "University of Cincinnati Hospital",
+				"yearCompleted": "2007"
+			}, {
+				"type": "RESIDENCY",
+				"institutionName": "American University of Beirut Medical Center",
+				"yearCompleted": "1995"
+			}],
+			"locationType": "HEALTHCARE_PROFESSIONAL",
+			"conditionsTreated": ["Blepharoplasty", "Blepharoptosis", "Blepharospasm", "Botox Injections", "Brow Ptosis", "Conjunctival Tumors", "Cosmetic Eyelid Surgery", "Cosmetic Fillers", "Cosmetic Injectables", "Direct Brow Lift", "Ectropion", "Endoscopic Brow Lift", "Endoscopic DCR", "Entropion", "Eyelid Malposition", "Eyelid Reconstruction", "Eyelid Tumors", "Eyelid Tumors- Basal Cell", "Eyelid Tumors- Squamous Cell", "Eyelid Tumors-Sebaceous Cell", "Grave's Disease(Hyperthyroid)", "Nasolacrimal Duct Obstruction", "Ocular Oncology", "Oculoplastics", "Ophthalmic Plastic", "Ophthalmology", "Orbital & Reconstructive Surg.", "Orbital Fractures", "Orbital Tumors", "Thyroid Eye Disease"],
+			"certifications": ["Am Bd Ophthalmology"],
+			"insuranceAccepted": ["AETNA", "Affinity", "AgeWell", "APA PARTNERS", "BEECH STREET", "CIGNA HMO", "CIGNA PPO", "EMP HEALTH CHOICE HMO", "EMP HEALTH CHOICE PPO", "EMP HEALTH CHOICE SR", "Fidelis", "FIRST CHOICE/CORVEL", "GHI / MEDICARE PLUS", "GHI CBP", "GHI HMO", "Great West", "HEALTH NET / PHS", "Health Net Federal Services", "HEALTHFIRST", "HIP", "ISLAND GROUP", "MAGNACARE", "MET EMPIRE", "METRA COMP", "MULTIPLAN", "Neighborhood Health Plan (Royal)", "OXFORD", "Partners Health Paln", "UNITED HEALTH CARE / CHP / MEDICAID", "UNITED HEALTHCARE", "US Family Health Plan", "US HEALTHCARE", "Visiting Nurse Service", "VYTRA", "Workers Compensation"],
+			"degrees": ["MD"],
+			"isoRegionCode": "NY",
+			"isClusterPrimary": true
+		}, {
+			"id": "P1124078589_A",
+			"timestamp": 1497887998054,
+			"accountId": "1277495",
+			"locationName": "Jonathan Buscaglia",
+			"address": "3 Technology Drive",
+			"address2": "Suite 300",
+			"city": "East Setauket",
+			"state": "NY",
+			"zip": "11733",
+			"countryCode": "US",
+			"language": "en",
+			"phone": "6314445220",
+			"isPhoneTracked": false,
+			"localPhone": "6314445220",
+			"faxPhone": "6314445225",
+			"categoryIds": ["1357"],
+			"featuredMessage": "Call to schedule an appointment",
+			"featuredMessageUrl": "https://www.stonybrookmedicine.edu/patientcare/gi",
+			"websiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=674&name=Jonathan%20Buscaglia%20MD",
+			"displayWebsiteUrl": "https://www.stonybrookmedicine.edu/profile?pid=674&name=Jonathan%20Buscaglia%20MD",
+			"description": "After completing my training in gastroenterology at Johns Hopkins Hospital, I decided to spend additional time concentrating on advanced endoscopic techniques.  I enjoy performing these complex endoscopic procedures, however, my primary goal in medicine is to provide the best care possible for all patients with gastrointestinal diseases.  My patients can be assured that whether I am visiting with them in the office or performing their procedure in the endoscopy suite, I am devoting 100% of my attention and expertise to their individual medical needs.",
+			"logo": {
+				"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/1132x1132.png",
+				"width": 1132,
+				"height": 1132,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/150x150.png",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/BfgaKrJmpPrIVBLQz6Y5Fp-Xw0ae2ic7Vj14RwPt1Bk/1.0000/93x93.png",
+					"width": 93,
+					"height": 93
+				}]
+			},
+			"displayLat": 40.8973579406738,
+			"displayLng": -73.0880661010742,
+			"yextDisplayLat": 40.89733762168934,
+			"yextDisplayLng": -73.08807402849197,
+			"yextRoutableLat": 40.89702134051314,
+			"yextRoutableLng": -73.08717548847198,
+			"languages": ["English"],
+			"folderId": "136305",
+			"customFields": {
+				"15891": "Healthcare Professionals/Gastroenterology"
+			},
+			"gender": "MALE",
+			"headshot": {
+				"url": "http://a.mktgcdn.com/p/Wa2ayuOlWCtknaZGLkL5NFczWrJvm_vJRDfw1ggdGIE/1.0000/180x180.jpg",
+				"width": 180,
+				"height": 180,
+				"derivatives": [{
+					"url": "http://a.mktgcdn.com/p/Wa2ayuOlWCtknaZGLkL5NFczWrJvm_vJRDfw1ggdGIE/1.0000/150x150.jpg",
+					"width": 150,
+					"height": 150
+				}, {
+					"url": "http://a.mktgcdn.com/p/Wa2ayuOlWCtknaZGLkL5NFczWrJvm_vJRDfw1ggdGIE/1.0000/94x94.jpg",
+					"width": 94,
+					"height": 94
+				}]
+			},
+			"npi": "1124078589",
+			"firstName": "Jonathan",
+			"lastName": "Buscaglia",
+			"officeName": "Stony Brook Internists PC",
+			"educationList": [{
+				"type": "MEDICAL_SCHOOL",
+				"institutionName": "SUNY @ Buffalo",
+				"yearCompleted": "2001"
+			}, {
+				"type": "FELLOWSHIP",
+				"institutionName": "Johns Hopkins Hospital",
+				"yearCompleted": "2008"
+			}, {
+				"type": "RESIDENCY",
+				"institutionName": "Albert Einstein College of Medicine",
+				"yearCompleted": "2004"
+			}],
+			"locationType": "HEALTHCARE_PROFESSIONAL",
+			"conditionsTreated": ["Biliary Diseases", "Esophageal Cancer", "Esophageal Diseases", "Gallbladder Disease", "Gallstones", "Gastric Cancer", "Gastroesophageal Reflux Diseas", "GERD(Gastroesopheal Reflux)", "Pancreatic Cancer", "Pancreatic Diseases", "Stomach Cancer"],
+			"certifications": ["Am Bd Int Med (CSQ: Gastro)"],
+			"insuranceAccepted": ["AETNA", "Affinity", "AgeWell", "APA PARTNERS", "BEECH STREET", "CIGNA HMO", "CIGNA PPO", "EMP HEALTH CHOICE HMO", "EMP HEALTH CHOICE PPO", "EMP HEALTH CHOICE SR", "Fidelis", "FIRST CHOICE/CORVEL", "GHI / MEDICARE PLUS", "GHI CBP", "GHI HMO", "Great West", "HEALTH NET / PHS", "Health Net Federal Services", "HEALTHFIRST", "HIP", "ISLAND GROUP", "MAGNACARE", "MET EMPIRE", "METRA COMP", "MULTIPLAN", "Neighborhood Health Plan (Royal)", "OXFORD", "Partners Health Paln", "SUFFOLK HEALTH PLAN", "UNITED HEALTH CARE / CHP / MEDICAID", "UNITED HEALTHCARE", "US Family Health Plan", "US HEALTHCARE", "Visiting Nurse Service", "VYTRA", "Workers Compensation"],
+			"degrees": ["MD"],
+			"isoRegionCode": "NY",
+			"isClusterPrimary": true
+		}]
+	}
+}
