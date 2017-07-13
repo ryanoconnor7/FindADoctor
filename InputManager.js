@@ -1,7 +1,7 @@
 
 
 function mainTextFieldChanged() {
-        var textField = document.getElementById("main")
+        var textField = document.getElementById("main-search")
         var additional = document.getElementById("additional-fields")
 
         console.log("keyed up on main search field")
