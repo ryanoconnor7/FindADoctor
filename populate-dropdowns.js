@@ -27,6 +27,6 @@ $.ajax({
 	complete: function(xhr, status) {
 	//console.log('finished');
 	}
-});
+})
 });
 

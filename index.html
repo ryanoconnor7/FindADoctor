@@ -41,31 +41,34 @@ function mainTextFieldChanged() {
 
 <br>
     <div >
-        <p><input id="main" onKeyUp="mainTextFieldChanged()" placeholder="Specialty, Condition, Treatment..."></p>
+        <p><input id="main-search" onKeyUp="mainTextFieldChanged()" placeholder="Specialty, Condition, Treatment..."></p>
     </div>
 
     <div id="additional-fields" style="visibility:hidden"> 
         <div class="search-insurance">
-            <select name="Insure" id="Insure" class="search-insurance" style="width:60%">
+            <select name="Insure" id="insurence-search" class="search-insurance" style="width:60%">
                 <option SELECTED value="">Filter By Insurance</option>
             </select>
-            <select name="Gender" id="Gender" class="search-gender" style="width:30%">
+            <select name="Gender" id="gender-search" class="search-gender" style="width:30%">
                 <option SELECTED value="Gender">Gender</option>
                 <option UNSELECTED value="Male">Male</option>
                 <option value="Female">Female</option>
             </select>
-            <select name="Age" id="Age" class="search-age" style="width:50%">
+            <select name="Age" id="age-search" class="search-age" style="width:45%">
                 <option SELECTED value="Pediatric/Adult">Pediatric/Adult</option>
                 <option UNSELECTED value="Pediatric">Pediatric</option>
                 <option value="Adult">Adult</option>
             </select>
+            <select name="Language" id="language-search" class="search-language" style="width:45">
+                <option SELECTED value="">Filter By Language</option>
+            </select>       
             <br>
             <br>
             
         </div>
         
 
-        <input id="zipCode" placeholder="Zip Code">
+        <input id="zip-code-search" placeholder="Zip Code">
     </div>
 </div>
 </center>
