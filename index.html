@@ -24,8 +24,8 @@ input {
 <script src="InputManager.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="updateDB.js"></script>
-
-
+<script>
+/*
         console.log("keyed up on main search field")
         
         if (textField.value == 0) {
@@ -49,9 +49,9 @@ input {
  <div id="map" style="z-index: -1; position:absolute;width:100%;height:100%">
     <script>
       function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+        var uluru = {lat: 40.915472, lng: -73.122721};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 10,
           center: uluru
         });
         var marker = new google.maps.Marker({
@@ -67,17 +67,18 @@ input {
  </div>
 <center>
     
-    <div id="search-view" style="padding-right:25%;padding-left:25%;z-index:123;position:absolute;align-content:center;;
-    opacity:25";>
+    <div id="search-view" style="z-index:123;position:absolute;align-content:left;;
+    opacity:25;width:100%";>
    
     <br>
             <script src="InputManager.js"></script>
 
-        <div style="width:100%">
+        <div style="width:40%">
             <p><input id="main-search" onKeyUp="mainTextFieldChanged()" placeholder="Specialty, Condition, Treatment..." style="width:100%"></p>
-        </div>
-
-        <div id="additional-fields" style="visibility:hidden"> 
+           
+            <!-- <input id="zip-code-search" placeholder="Zip Code"> -->
+        
+        </div><div id="additional-fields" style="width:40%"> 
             <div class="search-insurance">
                 <select name="Insure" id="insurence-search" class="search-insurance" style="width:60%">
                     <option SELECTED value="">Filter By Insurance</option>
@@ -99,11 +100,7 @@ input {
                 <br>
                 
             </div>
-            
-
-            <input id="zip-code-search" placeholder="Zip Code">
-        
-        </div>
+         </div>
     </div>
 </center>
 </body>
