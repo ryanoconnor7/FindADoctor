@@ -7,8 +7,11 @@ if(typeof(yext)=="undefined"){ // in case you'e already using an object called y
     yext.jobs={}
 }
 
-yext.getJSON=function(url){ // getJSON with promises
-    url = 'https://script.google.com/macros/s/AKfycbxH_t0MnnzTDvWnGKwpyIJUkJJqpuBOiZjwnerTgtGLsONojZg/exec?url='+encodeURIComponent(url)
+yext.getJSON=function(url,additionalParamNamesX, additionalParamValuesX){ // getJSON with promises
+
+    // New script - copy of Yext - https://script.google.com/macros/s/AKfycbw-J7Zaw7yl6kbFFAo0VKbVHBg-vTL7XvsdEkGE2p1eCXxMkt0/exec
+    url = 'https://script.google.com/macros/s/AKfycbw-J7Zaw7yl6kbFFAo0VKbVHBg-vTL7XvsdEkGE2p1eCXxMkt0/dev?url='+encodeURIComponent(url)+'&paramNames='+encodeURIComponent(additionalParamNamesX)+'&paramValues='+encodeURIComponent(additionalParamValuesX)
+    
     return new Promise(function(resolve, reject) {
         var s = document.createElement('script')
         var uid = "job"+Date.now().toString()+Math.random().toString().slice(2)
@@ -31,10 +34,11 @@ yext.getJSON=function(url){ // getJSON with promises
 
 // Handle the response
 
-function makeAPICall(url) {
+function makeAPICall(url,additionalParamNames,additionalParamValues) {
 
+    console.log(additionalParamNames, '|',additionalParamValues)
     return new Promise(function(resolve,reject) {
-        yext.getJSON(url) 
+        yext.getJSON(url,additionalParamNames,additionalParamValues) 
         .then (function(data){
             console.log("SUCCESS")
             resolve(data)

@@ -1,7 +1,7 @@
 
 
 function mainTextFieldChanged() {
-        var textField = document.getElementById("main-search")
+        var textField = document.getElementById("Query")
         var additional = document.getElementById("additional-fields")
 
         console.log("keyed up on main search field")
@@ -14,13 +14,12 @@ function mainTextFieldChanged() {
                 additional.style="visibility:visible"
                 console.log("should show")
 
-                var specialtyURL = 'https://api.yext.com/v2/accounts/{accountId}/locationsearch?api_key=API_KEY&v=20170705?filters=[{"categoryID":{"contains":["' + textField.textContent + '"]}}]' 
+                var specialtyURL = 'https://api.yext.com/v2/accounts/[accountId]/locationsearch?api_key=API_KEY&v=20170705' //[{%22specialties%22:{%22contains%22:[%22radiology%22]}}]' 
 
                                 $.getScript("DataManager.js").then(function() {
                                         console.log("Making call...")  
-                                        makeAPICall()
+                                        makeAPICall(specialtyURL,'filters','[{"specialties":{"contains":["'+textField.value+'"]}}]')
                                         .then(function(data) {
-                                        console.log("DATA:", JSON.stringify(data))
 
                                         try {
                                         var json = JSON.parse(JSON.stringify(data))

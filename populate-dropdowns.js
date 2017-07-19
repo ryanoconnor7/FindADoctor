@@ -10,9 +10,9 @@ $.ajax({
 	success: function(data) {
 		for(var prop in data) {
 			if (data[prop].ORDER == '1') {
-	       		$('<option value=' + data[prop].CODE + '>' + data[prop].NAME + '</option>').appendTo('#search-insurance');
+	       		$('<option value=' + data[prop].CODE + '>' + data[prop].NAME + '</option>').appendTo('#insurance-search');
 			} else {
-				$('<option value=' + data[prop].CODE + '>' + data[prop].NAME + '</option>').appendTo('#search-language');
+				$('<option value=' + data[prop].CODE + '>' + data[prop].NAME + '</option>').appendTo('#language-search');
 			}
 	    }	
 	},
