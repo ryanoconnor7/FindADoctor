@@ -7,11 +7,11 @@ function mainTextFieldChanged() {
         console.log("keyed up on main search field")
         
         if (textField.value == 0) {
-                additional.style="visibility:hidden"
+                // additional.style="visibility:hidden"
 
                 console.log("should not show")
         } else {
-                additional.style="visibility:visible"
+                // additional.style="visibility:visible"
                 console.log("should show")
 
                 var specialtyURL = 'https://api.yext.com/v2/accounts/[accountId]/locationsearch?api_key=API_KEY&v=20170705' //[{%22specialties%22:{%22contains%22:[%22radiology%22]}}]' 
