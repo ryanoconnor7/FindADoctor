@@ -1,25 +1,23 @@
-
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
 input {
-    width: 100%;
+    width: 80%%;
     height: 40px;
     border-radius: 10px; 
     font-size: 22px;
 }
 
 #search-view {
-    background: rgba(0, 0, 0, .25); /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgba(0, 0, 0, .40),rgba(0, 0, 0, .4),rgba(0, 0, 0, .4),rgba(0, 0, 0, .0)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(0, 0, 0, .40),rgba(0, 0, 0, .4),rgba(0, 0, 0, .4),rgba(0, 0, 0, .0)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(0, 0, 0, .40),rgba(0, 0, 0, .4),rgba(0, 0, 0, .4),rgba(0, 0, 0, .0)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(0, 0, 0, .40),rgba(0, 0, 0, .4),rgba(0, 0, 0, .4),rgba(0, 0, 0, .0)); /* Standard syntax */
-
+    background-color: #99CCFF
 }
 #map {
-        height: 400px;
-        width: 100%;
+        height: 800px;
+        width: 80%;
+    
        }
 </style>
+    </head>
 
 <script src="InputManager.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -46,7 +44,40 @@ input {
 </script>
 
 <body>
- <div id="map" style="z-index: -1; position:absolute;width:100%;height:100%">
+<center>
+    
+    <div id="search-view" style="z-index:123;position:relative;align-content:right;width:100%";>
+   
+    <br>
+            <script src="InputManager.js"></script>
+
+        <div style="width:40%">
+            <p><input id="main-search" onKeyUp="mainTextFieldChanged()" placeholder="Specialty, Condition, Treatment..." style="width:100%"></p>
+           
+            <!-- <input id="zip-code-search" placeholder="Zip Code"> -->
+        </div>
+        <div id="additional-fields" style="width:40%"> 
+            <div class="search-insurance">
+                <select name="Insure" id="insurence-search" class="insurence-search" style="width:60%">
+                    <option SELECTED value="">Filter By Insurance</option>
+                </select>
+                <select name="Gender" id="gender-search" class="gender-search" style="width:30%">
+                    <option SELECTED value="Gender">Gender</option>
+                    <option UNSELECTED value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <select name="Age" id="age-search" class="age-search" style="width:45%">
+                    <option SELECTED value="Pediatric/Adult">Pediatric/Adult</option>
+                    <option UNSELECTED value="Pediatric">Pediatric</option>
+                    <option value="Adult">Adult</option>
+                </select>
+                <select name="Language" id="language-search" class="language-search" style="width:50%">
+                    <option SELECTED value="">Filter By Language</option>
+                </select>   </div>    
+ </div>
+</center>
+       
+<div id="map" style="z-index: -1; float:right;width:80%;height:800px">
     <script>
       function initMap() {
         var uluru = {lat: 40.915472, lng: -73.122721};
@@ -62,46 +93,18 @@ input {
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtZvb0AIUJCiKc008_nmuu_jikJigt2B4&callback=initMap">
-    </script>
- </div>
-<center>
-    
-    <div id="search-view" style="z-index:123;position:absolute;align-content:left;;
-    opacity:25;width:100%";>
-   
-    <br>
-            <script src="InputManager.js"></script>
+</script>
 
-        <div style="width:40%">
-            <p><input id="main-search" onKeyUp="mainTextFieldChanged()" placeholder="Specialty, Condition, Treatment..." style="width:100%"></p>
-           
-            <!-- <input id="zip-code-search" placeholder="Zip Code"> -->
-        
-        </div><div id="additional-fields" style="width:40%"> 
-            <div class="search-insurance">
-                <select name="Insure" id="insurence-search" class="search-insurance" style="width:60%">
-                    <option SELECTED value="">Filter By Insurance</option>
-                </select>
-                <select name="Gender" id="gender-search" class="search-gender" style="width:30%">
-                    <option SELECTED value="Gender">Gender</option>
-                    <option UNSELECTED value="Male">Male</option>
-                    <option value="Female">Female</option>
-                </select>
-                <select name="Age" id="age-search" class="search-age" style="width:45%">
-                    <option SELECTED value="Pediatric/Adult">Pediatric/Adult</option>
-                    <option UNSELECTED value="Pediatric">Pediatric</option>
-                    <option value="Adult">Adult</option>
-                </select>
-                <select name="Language" id="language-search" class="search-language" style="width:45">
-                    <option SELECTED value="">Filter By Language</option>
-                </select>       
+ </div>
+ <div style="width:19%;height:100%;border:1px solid #000;border-radius: 25px;background: #FFFFFF; float:left";> Yext Search Results Go Here
+        </div>
                 <br>
                 <br>
             </div>
          </div>
     </div>
-</center>
- <div style="width:200px;height:655px;border:1px solid #000;border-radius: 25px;background: #FFFFFF; align="left";margin-left:10%;margin-top:20%>Yext Search Results Go Here</div>
+
+ 
 </body>
 <script async src="populate-dropdowns.js"></script>
 
