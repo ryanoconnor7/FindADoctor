@@ -5,7 +5,7 @@ input {
     width: 80%%;
     height: 40px;
     border-radius: 10px; 
-    font-size: 22px;
+    font-size: 16px;
 }
 
 #search-view {
@@ -16,12 +16,65 @@ input {
         width: 80%;
     
        }
+
+div.search-container-main button {
+
+    vertical-align: top;
+    z-index: 100;
+    position: absolute;
+    top: 6px;
+    right: 16px;
+    height: 40px;
+    width: 42px;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    font-size: inherit;
+    cursor: pointer;
+    border: 0;
+    background-color: #b5ada6;
+ }
+
+ #find-doctor {
+    text-align: center;
+    margin-top: 10px;
+    z-index: 8;
+}
+
+.search-container-main {
+    position: relative;
+    width: 60%;
+    padding: 0 10px;
+    font-size: 18px;
+    max-width: 536px;
+    vertical-align: center;
+    display: inline-block;
+}
+.ui-helper-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+container-main input[type="text"], .search-location input[type="text"] {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+}
+
 </style>
     </head>
 
 <script src="InputManager.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="updateDB.js"></script>
+ <!-- /* <script src="updateDB.js"></script>  */ -->
 <script>
 /*
         console.log("keyed up on main search field")
@@ -49,16 +102,22 @@ input {
     <div id="search-view" style="z-index:123;position:relative;align-content:right;width:100%";>
    
     <br>
-            <script src="InputManager.js"></script>
+    <script src="InputManager.js"></script>
 
-        <div style="width:40%">
-            <p><input id="main-search" onKeyUp="mainTextFieldChanged()" placeholder="Specialty, Condition, Treatment..." style="width:100%"></p>
-           
-            <!-- <input id="zip-code-search" placeholder="Zip Code"> -->
+
+    <div id="find-doctor">
+        <div class="search-container-main">
+            <form name="form1" method="post" action="javascript:mainTextFieldChanged();">
+                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input id="Query" name="Query" placeholder="Specialty, Condition, Treatment or Last Name" type="text" value="" class="ui-autocomplete-input" autocomplete="off">
+                <button type="submit" id="qbtn" class="submit button" style="height:30px;width:30px"><img src="MagGlass.png" style="width:75%;height:75%"></img></button>
+            </form>
         </div>
+    </div>
+
+
         <div id="additional-fields" style="width:40%"> 
             <div class="search-insurance">
-                <select name="Insure" id="insurence-search" class="insurence-search" style="width:60%">
+                <select name="Insure" id="insurance-search" style="width:60%">
                     <option SELECTED value="">Filter By Insurance</option>
                 </select>
                 <select name="Gender" id="gender-search" class="gender-search" style="width:30%">
@@ -71,7 +130,7 @@ input {
                     <option UNSELECTED value="Pediatric">Pediatric</option>
                     <option value="Adult">Adult</option>
                 </select>
-                <select name="Language" id="language-search" class="language-search" style="width:50%">
+                <select name="Language" id="language-search" class="search-language" style="width:60%">
                     <option SELECTED value="">Filter By Language</option>
                 </select>   </div>    
  </div>
