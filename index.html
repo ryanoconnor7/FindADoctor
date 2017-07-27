@@ -1,8 +1,10 @@
 <html><head>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
 <style>
+
 input {
-    width: 80%%;
+    width: 80%;
     height: 40px;
     border-radius: 10px; 
     font-size: 16px;
@@ -96,10 +98,11 @@ container-main input[type="text"], .search-location input[type="text"] {
      */
 </script>
 
+
 <body>
 <center>
     
-    <div id="search-view" style="z-index:123;position:relative;align-content:right;width:100%";>
+    <div id="search-view" style="z-index:123;position:relative;align-content:right;width:100%;height:20%";>
    
     <br>
     <script src="InputManager.js"></script>
@@ -117,26 +120,28 @@ container-main input[type="text"], .search-location input[type="text"] {
 
         <div id="additional-fields" style="width:40%"> 
             <div class="search-insurance">
-                <select name="Insure" id="insurance-search" style="width:60%">
+                <select name="Insure" id="insurance-search" style="width:40%">
                     <option SELECTED value="">Filter By Insurance</option>
                 </select>
-                <select name="Gender" id="gender-search" class="gender-search" style="width:30%">
+                <select name="Gender" id="gender-search" class="gender-search" style="width:40%">
                     <option SELECTED value="Gender">Gender</option>
                     <option UNSELECTED value="Male">Male</option>
                     <option value="Female">Female</option>
                 </select>
-                <select name="Age" id="age-search" class="age-search" style="width:45%">
+                <select name="Age" id="age-search" class="age-search" style="width:40%">
                     <option SELECTED value="Pediatric/Adult">Pediatric/Adult</option>
                     <option UNSELECTED value="Pediatric">Pediatric</option>
                     <option value="Adult">Adult</option>
                 </select>
-                <select name="Language" id="language-search" class="search-language" style="width:60%">
+                <select name="Language" id="language-search" class="search-language" style="width:40%">
                     <option SELECTED value="">Filter By Language</option>
                 </select>   </div>    
  </div>
 </center>
-       
-<div id="map" style="z-index: -1; float:right;width:80%;height:800px">
+<div id="map" style="z-index: 1; float:right;width:80%;height:80%">
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtZvb0AIUJCiKc008_nmuu_jikJigt2B4&callback=initMap">
+</script>
     <script>
       function initMap() {
         var uluru = {lat: 40.915472, lng: -73.122721};
@@ -150,201 +155,19 @@ container-main input[type="text"], .search-location input[type="text"] {
         });
       }
     </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtZvb0AIUJCiKc008_nmuu_jikJigt2B4&callback=initMap">
-</script>
-
+    
  </div>
- <div style="width:19%;height:100%;border:1px solid #000;border-radius: 25px;background: #FFFFFF; float:left";> Yext Search Results Go Here
+<!-- Scroll box for results: https://stackoverflow.com/questions/12099259/scroll-box-for-display-html-content -->
+ <div style="width:19%;height:80%;border:1px solid #000;border-radius: 25px;background: #FFFFFF; float:left";> Yext Search Results Go Here
         </div>
                 <br>
                 <br>
             </div>
          </div>
     </div>
-
+</div>
  
 </body>
 <script async src="populate-dropdowns.js"></script>
-
-
-
-
-<style>
-input {
-    width: 100%;
-    height: 40px;
-    border-radius: 10px; 
-    font-size: 16px;
-}
-
-#search-view {
-    background: rgba(0, 0, 0, .25); /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgba(0, 0, 0, .40),rgba(0, 0, 0, .4),rgba(0, 0, 0, .4),rgba(0, 0, 0, .0)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(0, 0, 0, .40),rgba(0, 0, 0, .4),rgba(0, 0, 0, .4),rgba(0, 0, 0, .0)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(0, 0, 0, .40),rgba(0, 0, 0, .4),rgba(0, 0, 0, .4),rgba(0, 0, 0, .0)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(0, 0, 0, .40),rgba(0, 0, 0, .4),rgba(0, 0, 0, .4),rgba(0, 0, 0, .0)); /* Standard syntax */
-
-}
-#map {
-        height: 400px;
-        width: 100%;
-       }
-
-div.search-container-main button {
-
-    vertical-align: top;
-    z-index: 100;
-    position: absolute;
-    top: 6px;
-    right: 16px;
-    height: 40px;
-    width: 42px;
-    padding: 0;
-    margin: 0;
-    border-radius: 10px;
-    font-size: inherit;
-    cursor: pointer;
-    border: 0;
-    background-color: #b5ada6;
- }
-
- #find-doctor {
-    text-align: center;
-    margin-top: 10px;
-    z-index: 8;
-}
-
-.search-container-main {
-    position: relative;
-    width: 60%;
-    padding: 0 10px;
-    font-size: 18px;
-    max-width: 536px;
-    vertical-align: center;
-    display: inline-block;
-}
-.ui-helper-hidden-accessible {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-container-main input[type="text"], .search-location input[type="text"] {
-    height: 50px;
-    width: 100%;
-    border: 1px solid #d1d1d1;
-    border-radius: 10px;
-    padding: 10px 12px;
-    margin-bottom: 10px;
-}
-
-</style>
-
-<script src="InputManager.js"></script>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<!-- <script src="updateDB.js"></script> -->
-<script>
-/*
-        console.log("keyed up on main search field")
-        
-        if (textField.value == 0) {
-            additional.style="visibility:hidden"
-            console.log("should show")
-
-            // Update UI to show Specialties - need to get from Yext
-
-            
-
-        } else {
-            additional.style="visibility:visible"
-            console.log("should not show")
-
-        }
- }
-     */
-</script>
-
-<body>
-
-<center>
-
-    <div id="search-view" style="z-index:123;position:absolute;align-content:left;;
-    opacity:25;width:100%;height:400px";>
-   
-    <br>
-    <script src="InputManager.js"></script>
-
-
-    <div id="find-doctor">
-        <div class="search-container-main">
-            <form name="form1" method="post" action="javascript:mainTextFieldChanged();">
-                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input id="Query" name="Query" placeholder="Specialty, Condition, Treatment or Last Name" type="text" value="" class="ui-autocomplete-input" autocomplete="off">
-                <button type="submit" id="qbtn" class="submit button" style="height:30px;width:30px"><img src="MagGlass.png" style="width:75%;height:75%"></img></button>
-            </form>
-        </div>
-    </div>
-
-
-        <div id="additional-fields" style="width:40%"> 
-            <div class="search-insurance">
-                <select name="Insure" id="insurance-search" style="width:60%">
-                    <option SELECTED value="">Filter By Insurance</option>
-                </select>
-                <select name="Gender" id="gender-search" class="search-gender" style="width:30%">
-                    <option SELECTED value="Gender">Gender</option>
-                    <option UNSELECTED value="Male">Male</option>
-                    <option value="Female">Female</option>
-                </select>
-                <select name="Age" id="age-search" class="search-age" style="width:45%">
-                    <option SELECTED value="Pediatric/Adult">Pediatric/Adult</option>
-                    <option UNSELECTED value="Pediatric">Pediatric</option>
-                    <option value="Adult">Adult</option>
-                </select>
-                <select name="Language" id="language-search" class="search-language" style="width:60%">
-                    <option SELECTED value="">Filter By Language</option>
-                </select>       
-                <br>
-                <br>
-                
-            </div>
-            
-            
-         </div>
-    </div>
-</center>
-
-<div id="map" style="z-index: -1; position:absolute;width:100%;height:100%">
-    <script>
-        function initMap() {
-            var uluru = {lat: 40.915472, lng: -73.122721};
-            var map = new google.maps.Map(document.getElementById('map'), {
-                                          zoom: 10,
-                                          center: uluru,
-                                          gestureHandling: "greedy"
-                                          });
-                                          var marker = new google.maps.Marker({
-                                                                              position: uluru,
-                                                                              map: map
-                                                                              });
-        }
-    
-    window.onresize = function() {
-        initMap()
-    }
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtZvb0AIUJCiKc008_nmuu_jikJigt2B4&callback=initMap">
-        </script>
-    
-</div>
-
-</body>
-<script async src="populate-dropdowns.js"></script>
-
 
 
