@@ -26,7 +26,12 @@ function beginDownload() {
             console.log("Total calls required: ",totalCallsRequired)
             token = json["response"]["nextPageToken"]
             timesRemaining = totalCallsRequired
-            callAgain()
+
+            for (i=1; i<=totalCallsRequired; i++) {
+                callAgain(i)
+
+
+            }
         }
         } 
         catch (e) {
@@ -46,13 +51,13 @@ var token = ""
 
 var timesRemaining = 0
 
-function callAgain() {
+function callAgain(index) {
 
     if (timesRemaining > 0) {
         $.getScript("DataManager.js").then(function() {
             console.log("Making call...")  
             
-            var newURL = specialtyURL + "&pageToken="+token
+            var newURL = specialtyURL + "&offset="+(index*50-50)
 
             console.log(newURL)
             makeAPICall(newURL)

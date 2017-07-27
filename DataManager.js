@@ -7,10 +7,10 @@ if(typeof(yext)=="undefined"){ // in case you'e already using an object called y
     yext.jobs={}
 }
 
-yext.getJSON=function(url,additionalParamNamesX, additionalParamValuesX){ // getJSON with promises
+yext.getJSON=function(url,savedUID){ // getJSON with promises
 
     // New script - copy of Yext - https://script.google.com/macros/s/AKfycbw-J7Zaw7yl6kbFFAo0VKbVHBg-vTL7XvsdEkGE2p1eCXxMkt0/exec
-    url = 'https://script.google.com/macros/s/AKfycbw-J7Zaw7yl6kbFFAo0VKbVHBg-vTL7XvsdEkGE2p1eCXxMkt0/dev?url='+encodeURIComponent(url)+'&paramNames='+encodeURIComponent(additionalParamNamesX)+'&paramValues='+encodeURIComponent(additionalParamValuesX)
+    url = 'https://script.google.com/macros/s/AKfycbw-J7Zaw7yl6kbFFAo0VKbVHBg-vTL7XvsdEkGE2p1eCXxMkt0/dev?url='+encodeURIComponent(url)+'&uid='+savedUID //+'&paramNames='+encodeURIComponent(additionalParamNamesX)+'&paramValues='+encodeURIComponent(additionalParamValuesX)
     
     return new Promise(function(resolve, reject) {
         var s = document.createElement('script')
@@ -34,11 +34,11 @@ yext.getJSON=function(url,additionalParamNamesX, additionalParamValuesX){ // get
 
 // Handle the response
 
-function makeAPICall(url,additionalParamNames,additionalParamValues) {
+function makeAPICall(url,savedUID) {
 
-    console.log(additionalParamNames, '|',additionalParamValues)
+    console.log()
     return new Promise(function(resolve,reject) {
-        yext.getJSON(url,additionalParamNames,additionalParamValues) 
+        yext.getJSON(url,savedUID) 
         .then (function(data){
             console.log("SUCCESS")
             resolve(data)
