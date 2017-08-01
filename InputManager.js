@@ -14,32 +14,35 @@ function mainTextFieldChanged() {
                 // additional.style="visibility:visible"
                 console.log("should show")
 
-                var url = 'https://api.yext.com/v2/accounts/[accountId]/locationsearch?api_key=API_KEY&v=20170705'
+                var url = 'http://localhost:5000'
 
                 var uid = 'someUID'
+       
+
+                $.getJSON(url, function(data) {
+
+                        console.log(data)
+                });
 
         }
-
 }
 
-//         $.getScript("DataManager.js").then(function() {
-        //                                 console.log("Making call...")  
-        //                                 makeAPICall(url,uid)
-        //                                 .then(function(data) {
+//  $.getScript("DataManager.js").then(function() {
+//                                         console.log("Making call...")  
+//                                         makeAPICall()
+//                                         .then(function(data) {
 
-        //                                 try {
-        //                                 var json = JSON.parse(JSON.stringify(data))
-        //                                 console.log("JSON:", json)
-        //                                 handleSpecialtiesResponseSuccess(json)
-        //                                 } 
-        //                                 catch (e) {
-        //                                 console.log("error:", e)
-        //                                 }
-        //                                 })
-        //                                 .catch(function(error) {
-        //                                 console.log("error: ", error) 
+//                                         try {
+//                                         var json = JSON.parse(JSON.stringify(data))
+//                                         console.log("JSON:", json)
+//                                         handleSpecialtiesResponseSuccess(json)
+//                                         } 
+//                                         catch (e) {
+//                                         console.log("error:", e)
+//                                         }
+//                                         })
+//                                         .catch(function(error) {
+//                                         console.log("error: ", error) 
                                         
-        //                                 })
-        //                         })
-
-
+//                                         })
+//                                 })

@@ -7,16 +7,18 @@ if(typeof(yext)=="undefined"){ // in case you'e already using an object called y
     yext.jobs={}
 }
 
-yext.getJSON=function(url,savedUID){ // getJSON with promises
+yext.getJSON=function(){ // getJSON with promises
 
     // New script - copy of Yext - https://script.google.com/macros/s/AKfycbw-J7Zaw7yl6kbFFAo0VKbVHBg-vTL7XvsdEkGE2p1eCXxMkt0/exec
-    url = 'https://script.google.com/macros/s/AKfycbw-J7Zaw7yl6kbFFAo0VKbVHBg-vTL7XvsdEkGE2p1eCXxMkt0/dev?url='+encodeURIComponent(url)+'&uid='+savedUID //+'&paramNames='+encodeURIComponent(additionalParamNamesX)+'&paramValues='+encodeURIComponent(additionalParamValuesX)
+    // url = 'https://script.google.com/macros/s/AKfycbw-J7Zaw7yl6kbFFAo0VKbVHBg-vTL7XvsdEkGE2p1eCXxMkt0/dev?url='+encodeURIComponent(url)+'&uid='+savedUID //+'&paramNames='+encodeURIComponent(additionalParamNamesX)+'&paramValues='+encodeURIComponent(additionalParamValuesX)
     
+    var url = 'https://localhost:5000'
+
     return new Promise(function(resolve, reject) {
         var s = document.createElement('script')
         var uid = "job"+Date.now().toString()+Math.random().toString().slice(2)
         s.id=uid
-        s.src=url+'&callback=yext.jobs.'+uid
+        s.src=url //+'&callback=yext.jobs.'+uid
         yext.jobs[uid]=function(x){
             resolve(x)
             setTimeout(function(){  // remove the scripts that were successfull 
@@ -34,11 +36,11 @@ yext.getJSON=function(url,savedUID){ // getJSON with promises
 
 // Handle the response
 
-function makeAPICall(url,savedUID) {
+function makeAPICall() {
 
     console.log()
     return new Promise(function(resolve,reject) {
-        yext.getJSON(url,savedUID) 
+        yext.getJSON() 
         .then (function(data){
             console.log("SUCCESS")
             resolve(data)
