@@ -1,26 +1,18 @@
-// // Create and Deploy Your First Cloud Functions// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
+var express = require('express');
+var app = express();
 
-exports.helloWorld = functions.https.onRequest((request, response) => {
-    // response.send("Hello from Firebase!");
+app.set('port', (process.env.PORT || 5000));
 
-    
-    require('https').request({
-        host: 'api.yext.com',
-        path: '/v2/accounts/1277495/locationsearch?api_key=5804b27c704c377a701bdad2309301d8&v=20170705',
-        method: 'GET'
-    }, function(res) {
-        res.setEncoding('utf8');
-        var body = '';
-        res.on('data', function(chunk) {
-            body += chunk;
-        });
-        res.on('end', function() {
-            body = JSON.parse(body);
+app.use(express.static(__dirname + '/public'));
 
-        })
-    }).end();
+// views is directory for all template files
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
 
-// var url = "https://api.yext.com/v2/accounts/1277495/locationsearch?api_key=5804b27c704c377a701bdad2309301d8&v=20170705"
+app.get('/', function(request, response) {
+  response.render('pages/index');
+});
 
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });

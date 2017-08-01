@@ -1,17 +1,23 @@
 {
-"name": "find-a-doctor",
+"name": "find-a-doc",
   "version": "0.1.0",
-
+  "description": "Find a Doctor Search",
   "engines": {
-    "node": "6.10.2"
+    "node": "6.11.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
   },
   "dependencies": {
     "ejs": "2.5.6",
     "express": "4.15.2"
   },
-"scripts": {
-    "start":"node index.js"
-}
-
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ]
 
 }
