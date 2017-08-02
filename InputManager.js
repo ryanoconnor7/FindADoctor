@@ -14,7 +14,7 @@ function mainTextFieldChanged() {
                 // additional.style="visibility:visible"
                 console.log("should show")
 
-                var url = 'https://findadoctor.herokuapp.com'
+                var url = 'http://localhost:5000'
 
                 var uid = 'someUID'
        
