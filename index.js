@@ -2,7 +2,9 @@ var express = require('express');
 var app = express();
 var fs = require('fs');
 var fullArray = []
-
+var tempArray = []
+var lastUpdated = new Date()
+var isUpdating = false
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -13,27 +15,67 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(request, response) {  
   if (fullArray.length > 0) {
-    response.json(fullArray)
-    console.log("Returning locations count from memory:",fullArray.length)
+    var dateNow = new Date()
+    // 18 second data timeout
+    var secondsDif = (dateNow-lastUpdated)/1000/60/60
+    var hoursToRequireUpdate = 1/120
+    console.log("Seconds dif:",secondsDif)
+    if (secondsDif >= hoursToRequireUpdate) {
+      console.log("Data requires updating, but returning locations count from memory:",fullArray.length)
+
+      if (!isUpdating) {
+        isUpdating = true
+        firstCall().then(function() {
+          fullArray = tempArray
+          isUpdating = false
+          lastUpdated = dateNow
+        })
+      }
+      response.json(fullArray)
+
+    } else {
+      // No update required 
+      response.json(fullArray)
+      console.log("Returning locations count from memory:",fullArray.length)
+    }
   } else {
-    response.json(firstCall())
+    if (isUpdating) {
+      response.json(fullArray)
+    } else {
+      isUpdating = true
+      firstCall().then(function() {
+      var dateNow = new Date()
+        lastUpdated = dateNow
+        fullArray = tempArray
+        isUpdating = false
+        response.json(fullArray)
+      })
+    }
+   
   }
 
-});
+}).end;
 
 app.get('/refresh/', function(request, response) {
-  fullArray = []
 
-  firstCall().then(function(data) {
+  if (isUpdating) {
+      response.send("Already updating!")
+    } else {
+      isUpdating = true
+      firstCall().then(function() {
+      var dateNow = new Date()
+        lastUpdated = dateNow
+        fullArray = tempArray
+        isUpdating = false
+        var message = "Finished updating database with count of locations:" + fullArray.length
+        response.status(200).send(message)
+      })
+    }
 
-      response.json(data)
-
-  })
-
-
-})
+}).end
 
 function firstCall() {
+  tempArray = []
   return new Promise(function(resolve) {
   console.log("The array had this count before we did anything: ", fullArray.length)
   require('https').request({
@@ -56,7 +98,7 @@ function firstCall() {
 
           for (i=1; i<=locations.length; i++) {
             var loc = locations[i-1]
-            fullArray.push(loc)
+            tempArray.push(loc)
           }
 
           if (locationsCount > 50) {
@@ -70,13 +112,15 @@ function firstCall() {
               actions.push(callAgain(i))
             }
 
-            var allArray = Promise.all(actions)
-            console.log("all", allArray)
-            
-            // allArray.then(function(data) {
-            //   fullArray = fullArray.concat(allArray)
-            //   resolve(fullArray)
-            // })
+            Promise.all(actions).then(function(data) {
+              console.log("all", data.length)
+
+              for (i=1; i<=data.length; i++) {
+                tempArray = tempArray.concat(data[i-1])
+              }
+              resolve()
+            })
+           
           }
         })}).end();
 
@@ -103,12 +147,8 @@ function callAgain(index) {
               var locations = body["response"]["locations"]
             console.log("called", index, "with these locations", locations.length)
 
-            fullArray = fullArray.concat(locations)
+            // tempArray = tempArray.concat(locations)
             resolve(locations)
-        // for (i=1; i<=locations.length; i++) {
-        //   var loc = locations[i-1]
-        //   fullArray.push(loc)
-        // }
         
       })}).end();
   })

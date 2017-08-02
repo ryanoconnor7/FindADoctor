@@ -1,3 +1,53 @@
+var localArray = []
+var localLastUpdated = new Date()
+var isUpdatingLocal = false
+
+function updateData() {
+    if (localArray.length > 0) {
+        var dateNow = new Date()
+
+        var localHoursDif = (dateNow-lastUpdated)/1000/60/60
+        var hoursToRequireUpdateLocal = 1/120
+        console.log("Hours dif:",localHoursDif)
+        if (localHoursDif >= hoursToRequireUpdateLocal) {
+            console.log("Data requires updating. ",fullArray.length)
+
+            makeCall()
+
+        } else {
+        // No update required 
+        console.log("Using locations count from memory:", localArray.length)
+        }
+    } else {
+        makeCall()
+    }
+}
+
+function makeCall() {
+    isUpdatingLocal = true
+
+    var url = 'https://findadoctor.herokuapp.com'
+
+    $.getJSON(url, function(data) {
+        localArray = JSON.parse(data)
+        console.log("successfully set local array with count of ")
+    });
+}
+
+updateData()
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
 console.log('yext.js loaded!')
 
@@ -55,5 +105,5 @@ function makeAPICall() {
 }
 
 
-
+*/
 
