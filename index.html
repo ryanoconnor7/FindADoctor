@@ -71,16 +71,19 @@ container-main input[type="text"], .search-location input[type="text"] {
     margin-bottom: 10px;
 }
 
-</style>
+</style></head>  
+
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="DataManager.js"></script>
  <script>
     updateData().then(function() {
             console.log("Finished.")
         console.log("Successfully updated database with count: ",localArray.length)
+        var statusLabel = document.getElementById("status")
+        statusLabel.innerText = "Complete!"
     })
+
 </script> 
-</head>  
 
 <script src="InputManager.js"></script>
 

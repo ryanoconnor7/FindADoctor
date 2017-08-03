@@ -1,9 +1,7 @@
 var localArray = []
 var localLastUpdated = new Date()
-var statusLabel = document.getElementById("status")
 
 function updateData() {
-    console.log("Loading locations...")
     return new Promise(function(resolve) {
         if (localArray.length > 0) {
                 var dateNow = new Date()
