@@ -10,7 +10,14 @@ app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
 
-// views is directory for all template file
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, X-Access-Token, Authorization");
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, HEAD");
+  res.header("Access-Control-Expose-Headers", "Token, Access-Token, Uid");
+  next();
+});
+
 
 
 app.get('/', function(request, response) {  
