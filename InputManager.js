@@ -2,6 +2,7 @@
 var map = null
 var markers = []
 var statusDiv = null
+var sortedResults = []
 
 function mainTextFieldChanged() {
         var textField = document.getElementById("Query")
@@ -25,6 +26,23 @@ function mainTextFieldChanged() {
 
                                 console.log("Received results ("+results.length+")")
 
+                                if (navigator.geolocation) {
+                                navigator.geolocation.getCurrentPosition(function(loc) {
+                                       for (i=0;i<=results.length-1;i++) {
+                                        var rLat = Number(results[i].displayLat)
+                                        var rLng = Number(results[i].displayLng)
+
+                                     if (distance(loc.coords.latitude,loc.coords.longitude,rLat,rLng,"M") < 10) {
+                                        sortedResults.push(results[i])
+                                        console.log("We found a match!")
+                                     }   
+
+                                }  
+                                })
+
+                               
+                        }
+
                                 statusDiv.innerText = "Received results ("+results.length+")"
                                 statusDiv.innerHTML = ""
                                 if (markers.length > 0) {
@@ -33,8 +51,8 @@ function mainTextFieldChanged() {
                                 }
                                 var bounds = new google.maps.LatLngBounds();
 
-                                for (i=0; i<=results.length-1; i++) {
-                                        var result = results[i]
+                                for (i=0; i<=sortedResults.length-1; i++) {
+                                        var result = sortedResults[i]
                                         var url = " "
                                         if (result.headshot != "undefined" && result.headshot != null) {
                                                 if (result.headshot.url != "undefined" && result.headshot.url != null) {
@@ -57,6 +75,7 @@ function mainTextFieldChanged() {
                                         map: map,       
                                         label: String(i+1),
                                         animation: google.maps.Animation.DROP
+                                        
                                         });
 
                                         marker.addListener('mouseover', function() {
@@ -66,6 +85,14 @@ function mainTextFieldChanged() {
 
                                                 cell.style.backgroundColor = "9bcfef"
                                         });     
+
+                                         var contentString = `<p>${result.firstName+" "+result.lastName}</p>`
+                                         var infowindow = new google.maps.InfoWindow({
+                                        content: contentString
+                                        });
+                                        marker.addListener('click', function() {
+                                        infowindow.open(map, marker);
+                                        });
 
                                          statusDiv.innerHTML = statusDiv.innerHTML.concat(`
                                         <div id="cell" class=${i} style="width:100%;height:90px;padding-top:5px;padding-bottom:5px;" action="javascript:toggleBounce(${i});">
@@ -83,7 +110,6 @@ function mainTextFieldChanged() {
                                 }
                                 //center the map to the geometric center of all markers
                                 map.panTo(bounds.getCenter())
-                                setActions()
 
                                         
                          })
@@ -124,3 +150,17 @@ function mainTextFieldChanged() {
           markers[i].setAnimation(google.maps.Animation.BOUNCE);
         }
       }
+
+function distance(lat1, lon1, lat2, lon2, unit) {
+        var radlat1 = Math.PI * lat1/180
+        var radlat2 = Math.PI * lat2/180
+        var theta = lon1-lon2
+        var radtheta = Math.PI * theta/180
+        var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+        dist = Math.acos(dist)
+        dist = dist * 180/Math.PI
+        dist = dist * 60 * 1.1515
+        if (unit=="K") { dist = dist * 1.609344 }
+        if (unit=="N") { dist = dist * 0.8684 }
+        return dist
+}

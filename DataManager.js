@@ -32,6 +32,8 @@ function updateData() {
 
 function makeCall() {
     return new Promise(function(resolve) {
+
+        // change to where you host index.js
         var url = 'https://findadoctor.herokuapp.com'
         
         $.getJSON(url, function(data) {
