@@ -51,8 +51,8 @@ function mainTextFieldChanged() {
                                 }
                                 var bounds = new google.maps.LatLngBounds();
 
-                                for (i=0; i<=sortedResults.length-1; i++) {
-                                        var result = sortedResults[i]
+                                for (i=0; i<=results.length-1; i++) {
+                                        var result = results[i]
                                         var url = " "
                                         if (result.headshot != "undefined" && result.headshot != null) {
                                                 if (result.headshot.url != "undefined" && result.headshot.url != null) {
