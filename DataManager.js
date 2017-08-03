@@ -58,3 +58,4 @@ function searchLocations(text) {
         resolve(searchResults)
     })
 }
+

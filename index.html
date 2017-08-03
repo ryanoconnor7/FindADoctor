@@ -70,21 +70,17 @@ container-main input[type="text"], .search-location input[type="text"] {
     padding: 10px 12px;
     margin-bottom: 10px;
 }
+ 
+ 
+.headshot {
+    display:block;
+     margin: 0px; 
+} 
+ 
 
 </style></head>  
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="DataManager.js"></script>
- <!-- <script>
-    updateData().then(function() {
-            console.log("Finished.")
-        console.log("Successfully updated database with count: ",localArray.length)
-        var statusLabel = document.getElementById("status")
-        statusLabel.innerText = "Complete!"
-    })
-
-</script>  -->
-
 <script src="InputManager.js"></script>
 
 
@@ -98,7 +94,7 @@ container-main input[type="text"], .search-location input[type="text"] {
     <div id="find-doctor">
         <div class="search-container-main">
             <form name="form1" method="post" action="javascript:mainTextFieldChanged();">
-                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input id="Query" name="Query" placeholder="Specialty, Condition, Treatment or Last Name" type="text" value="" class="ui-autocomplete-input" autocomplete="off">
+                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input id="Query" name="Query" placeholder="Specialty, Condition, Treatment, or Name" type="text" value="" class="ui-autocomplete-input" autocomplete="off">
                 <button type="submit" id="qbtn" class="submit button" style="height:30px;width:30px"><img src="MagGlass.png" style="width:75%;height:75%"></img></button>
             </form>
         </div>
@@ -125,32 +121,15 @@ container-main input[type="text"], .search-location input[type="text"] {
                 </select>   </div>    
  </div>
 </center>
-<div id="map" style="z-index: 1; float:right;width:80%;height:80%">
+<div id="map" style="z-index: 1; float:right;width:59%;height:80%">
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtZvb0AIUJCiKc008_nmuu_jikJigt2B4&callback=initMap">
 </script>
-    <script async defer>
-      function initMap() {
-        var uluru = {lat: 40.915472, lng: -73.122721};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 10,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    
+<script async defer src="DataManager.js"></script>
  </div>
 <!-- Scroll box for results: https://stackoverflow.com/questions/12099259/scroll-box-for-display-html-content -->
- <div id="status" style="width:19%;height:80%;border:1px solid #000;border-radius: 25px;background: #FFFFFF; float:left";> Yext Search Results Go Here
-        </div>
-                <br>
-                <br>
-            </div>
-         </div>
+ <div id="status" style="width:40%;height:80%;border:1px solid #000;border-radius: 25px;background: #FFFFFF; float:left;overflow-y:scroll" > Yext Search Results Go Here
+        
     </div>
 </div>
  
