@@ -72,11 +72,17 @@ container-main input[type="text"], .search-location input[type="text"] {
 }
 
 </style>
-    </head>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="DataManager.js"></script>
+ <script>
+    updateData().then(function() {
+            console.log("Finished.")
+        console.log("Successfully updated database with count: ",localArray.length)
+    })
+</script> 
+</head>  
 
 <script src="InputManager.js"></script>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="DataManager.js"></script>  
 
 
 <body>
@@ -85,8 +91,6 @@ container-main input[type="text"], .search-location input[type="text"] {
     <div id="search-view" style="z-index:123;position:relative;align-content:right;width:100%;height:20%";>
    
     <br>
-    <script src="InputManager.js"></script>
-
 
     <div id="find-doctor">
         <div class="search-container-main">
@@ -119,10 +123,10 @@ container-main input[type="text"], .search-location input[type="text"] {
  </div>
 </center>
 <div id="map" style="z-index: 1; float:right;width:80%;height:80%">
-    <script async defer
+<script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtZvb0AIUJCiKc008_nmuu_jikJigt2B4&callback=initMap">
 </script>
-    <script>
+    <script async defer>
       function initMap() {
         var uluru = {lat: 40.915472, lng: -73.122721};
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -138,7 +142,7 @@ container-main input[type="text"], .search-location input[type="text"] {
     
  </div>
 <!-- Scroll box for results: https://stackoverflow.com/questions/12099259/scroll-box-for-display-html-content -->
- <div style="width:19%;height:80%;border:1px solid #000;border-radius: 25px;background: #FFFFFF; float:left";> Yext Search Results Go Here
+ <div id="status" style="width:19%;height:80%;border:1px solid #000;border-radius: 25px;background: #FFFFFF; float:left";> Yext Search Results Go Here
         </div>
                 <br>
                 <br>

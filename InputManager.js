@@ -2,6 +2,8 @@
 
 function mainTextFieldChanged() {
         var textField = document.getElementById("Query")
+        var statusLabel = document.getElementById("status")
+
         var additional = document.getElementById("additional-fields")
 
         console.log("keyed up on main search field")
@@ -14,15 +16,13 @@ function mainTextFieldChanged() {
                 // additional.style="visibility:visible"
                 console.log("should show")
 
-                var url = 'http://localhost:5000'
+                updateData().then(function() {
+                    console.log("Ready to search \""+textField.value+'"')
+                        searchLocations(textField.value).then(function(results) {
 
-                var uid = 'someUID'
-       
-
-                $.getJSON(url, function(data) {
-                        console.log(data)
-                });
-
+                                console.log("Received results ("+results.length+")")
+                        })
+                })
         }
 }
 
