@@ -2,7 +2,6 @@
 
 function mainTextFieldChanged() {
         var textField = document.getElementById("Query")
-        var statusLabel = document.getElementById("status")
 
         var additional = document.getElementById("additional-fields")
 
@@ -21,6 +20,9 @@ function mainTextFieldChanged() {
                         searchLocations(textField.value).then(function(results) {
 
                                 console.log("Received results ("+results.length+")")
+                                var statusLabel = document.getElementById("status")
+                                statusLabel.innerText = "Received results ("+results.length+")"
+
                         })
                 })
         }
